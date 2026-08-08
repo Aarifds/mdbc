@@ -4,10 +4,14 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
+import { useTranslations } from "next-intl";
+
 import "./HeroCarousel.css";
 import heroSlides from "@/data/heroSlides";
 
 export default function HeroCarousel() {
+  const t = useTranslations("Hero");
+
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -18,10 +22,13 @@ export default function HeroCarousel() {
     return () => clearInterval(interval);
   }, []);
 
-  const nextSlide = () => setCurrent((prev) => (prev + 1) % heroSlides.length);
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % heroSlides.length);
+  };
 
-  const prevSlide = () =>
+  const prevSlide = () => {
     setCurrent((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
+  };
 
   return (
     <section className="hero-carousel">
@@ -32,7 +39,7 @@ export default function HeroCarousel() {
         >
           <Image
             src={slide.image}
-            alt={slide.title}
+            alt={t(slide.title)}
             fill
             priority={index === 0}
             className="hero-image"
@@ -41,30 +48,38 @@ export default function HeroCarousel() {
           <div className="hero-overlay"></div>
 
           <div className="hero-content container">
-            <span className="hero-badge">MANNAR DIGITAL BUSINESS COMPANY</span>
+            <span className="hero-badge">{t("company")}</span>
 
-            <h1>{slide.title}</h1>
+            <h1>{t(slide.title)}</h1>
 
-            <p>{slide.description}</p>
+            <p>{t(slide.description)}</p>
 
             <div className="hero-buttons">
               <Link href="/services" className="hero-primary">
-                Our Services
+                {t("servicesButton")}
               </Link>
 
               <Link href="/contact" className="hero-secondary">
-                Contact Us
+                {t("contactButton")}
               </Link>
             </div>
           </div>
         </div>
       ))}
 
-      <button className="hero-arrow left" onClick={prevSlide}>
+      <button
+        className="hero-arrow left"
+        onClick={prevSlide}
+        aria-label="Previous slide"
+      >
         <HiChevronLeft />
       </button>
 
-      <button className="hero-arrow right" onClick={nextSlide}>
+      <button
+        className="hero-arrow right"
+        onClick={nextSlide}
+        aria-label="Next slide"
+      >
         <HiChevronRight />
       </button>
 
@@ -74,6 +89,7 @@ export default function HeroCarousel() {
             key={index}
             className={current === index ? "active" : ""}
             onClick={() => setCurrent(index)}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>

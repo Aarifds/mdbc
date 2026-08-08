@@ -1,0 +1,32 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "solutions": "Solutions",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "company": "MANNAR DIGITAL BUSINESS COMPANY",
+
+    "slide1Title": "Empowering Businesses Through Digital Innovation",
+    "slide1Description": "Mannar Digital Business Company delivers innovative digital solutions that help businesses grow, transform, and succeed.",
+
+    "slide2Title": "Technology That Drives Business Success",
+    "slide2Description": "We provide reliable IT services, software solutions, and digital transformation for organizations of every size.",
+
+    "slide3Title": "Your Trusted Digital Business Partner",
+    "slide3Description": "Together, we create modern digital experiences that inspire growth and long-term success.",
+
+    "servicesButton": "Our Services",
+    "contactButton": "Contact Us"
+  },
+  "About": {
+    "label": "About Us",
+    "title": "Building Digital Solutions That Move Businesses Forward",
+    "description": "MANNAR DIGITAL BUSINESS COMPANY is focused on delivering reliable technology and digital business solutions designed around the evolving needs of modern organizations.",
+    "description2": "We combine technology, creativity, and business understanding to help organizations improve their digital presence, streamline operations, and create sustainable opportunities for growth.",
+    "companyLogoAlt": "MANNAR DIGITAL BUSINESS COMPANY Logo",
+    "knowMore": "Know More"
+  }
+}

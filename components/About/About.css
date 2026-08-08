@@ -1,0 +1,353 @@
+/* =====================================================
+   About Section
+===================================================== */
+
+.about-section {
+  width: 100%;
+  padding: 110px 0;
+
+  background: var(--background);
+  color: var(--text);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+/* =====================================================
+   Container
+===================================================== */
+
+.about-container {
+  width: min(92%, var(--container-width));
+  margin: 0 auto;
+}
+
+/* =====================================================
+   Main Layout
+===================================================== */
+
+.about-main {
+  display: grid;
+
+  grid-template-columns: 1.2fr 0.8fr;
+
+  gap: 80px;
+
+  align-items: center;
+
+  /* Keep same layout in English and Arabic */
+  direction: ltr;
+}
+
+/* =====================================================
+   Left Content
+===================================================== */
+
+.about-content {
+  width: 100%;
+  direction: ltr;
+}
+
+/* =====================================================
+   About Label
+===================================================== */
+
+.about-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--primary);
+
+  font-size: 45px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* =====================================================
+   About Title
+===================================================== */
+
+.about-title {
+  margin: 0 0 30px;
+
+  font-size: clamp(30px, 6vw, 25px);
+
+  line-height: 1.05;
+
+  font-weight: 700;
+
+  color: var(--text);
+}
+
+/* =====================================================
+   Description
+===================================================== */
+
+.about-description {
+  max-width: 800px;
+
+  margin-bottom: 20px;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: var(--text-light);
+
+  direction: ltr;
+  text-align: left;
+}
+
+/* Arabic text only */
+html[lang="ar"] .about-description {
+  direction: rtl;
+  text-align: right;
+}
+
+/* =====================================================
+   Logo
+===================================================== */
+
+.about-image {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  direction: ltr;
+}
+
+.about-image-wrapper {
+  width: 100%;
+  max-width: 420px;
+
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 35px;
+
+  border-radius: 30px;
+
+  background: var(--surface);
+
+  border: 1px solid rgba(0, 0, 0, 0.06);
+
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-image-wrapper:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.12);
+}
+
+.about-image-wrapper img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =====================================================
+   Know More Button
+===================================================== */
+
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 10px;
+
+  padding: 13px 28px;
+
+  border-radius: 40px;
+
+  background: var(--primary);
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 25px rgba(0, 87, 217, 0.25);
+}
+
+/* =====================================================
+   Dark Theme
+===================================================== */
+
+[data-theme="dark"] .about-image-wrapper {
+  border-color: rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] .about-image-wrapper:hover {
+  border-color: var(--primary);
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* =====================================================
+   Tablet
+===================================================== */
+
+@media (max-width: 1023px) {
+  .about-section {
+    padding: 90px 0;
+  }
+
+  .about-main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 35px;
+
+    direction: ltr;
+  }
+
+  /* About Us first */
+  .about-content {
+    display: contents;
+  }
+
+  .about-label {
+    order: 1;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 18px;
+  }
+
+  /* Logo second */
+  .about-image {
+    order: 2;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-image-wrapper {
+    width: 320px;
+    max-width: 80%;
+
+    padding: 30px;
+
+    border-radius: 25px;
+  }
+
+  /* Title third */
+  .about-title {
+    order: 3;
+
+    width: 100%;
+
+    margin: 0;
+
+    text-align: center;
+
+    font-size: 52px;
+  }
+
+  /* Description last */
+  .about-description {
+    order: 4;
+
+    width: 100%;
+    max-width: 700px;
+
+    text-align: center;
+
+    font-size: 17px;
+  }
+
+  html[lang="ar"] .about-description {
+    text-align: center;
+  }
+
+  .about-button {
+    order: 5;
+
+    align-self: center;
+  }
+}
+
+/* =====================================================
+   Mobile
+===================================================== */
+
+@media (max-width: 767px) {
+  .about-section {
+    padding: 70px 0;
+  }
+
+  .about-main {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    direction: ltr;
+  }
+
+  .about-content {
+    order: 1;
+  }
+
+  .about-image {
+    order: 2;
+  }
+
+  .about-label {
+    font-size: 15px;
+  }
+
+  .about-title {
+    font-size: 42px;
+
+    margin-bottom: 25px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  html[lang="ar"] .about-description {
+    text-align: right;
+  }
+
+  .about-image-wrapper {
+    max-width: 280px;
+
+    padding: 25px;
+
+    border-radius: 22px;
+  }
+}

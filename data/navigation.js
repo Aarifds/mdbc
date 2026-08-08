@@ -1,7 +1,24 @@
-export const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Solutions", href: "/solutions" },
-  { name: "Contact", href: "/contact" },
+const navigation = [
+  {
+    key: "home",
+    href: "/",
+  },
+  {
+    key: "about",
+    href: "/about",
+  },
+  {
+    key: "services",
+    href: "/services",
+  },
+  {
+    key: "solutions",
+    href: "/solutions",
+  },
+  {
+    key: "contact",
+    href: "/contact",
+  },
 ];
+
+export { navigation };
