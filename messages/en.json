@@ -3,9 +3,9 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "solutions": "Solutions",
     "contact": "Contact"
   },
+
   "Hero": {
     "company": "MANNAR DIGITAL BUSINESS COMPANY",
 
@@ -21,6 +21,7 @@
     "servicesButton": "Our Services",
     "contactButton": "Contact Us"
   },
+
   "About": {
     "label": "About Us",
     "title": "Building Digital Solutions That Move Businesses Forward",
@@ -28,5 +29,68 @@
     "description2": "We combine technology, creativity, and business understanding to help organizations improve their digital presence, streamline operations, and create sustainable opportunities for growth.",
     "companyLogoAlt": "MANNAR DIGITAL BUSINESS COMPANY Logo",
     "knowMore": "Know More"
+  },
+  "HomeServices": {
+    "label": "Our Services",
+    "title": "Technology Solutions for Your Business",
+    "description": "Reliable networking and technology solutions designed to support modern business needs.",
+    "routers": {
+      "name": "Routers",
+      "description": "Reliable routing solutions for secure and efficient network connectivity."
+    },
+    "wireless": {
+      "name": "Wireless",
+      "description": "High-performance wireless solutions for seamless and reliable connectivity."
+    },
+    "storage": {
+      "name": "Storage Systems",
+      "description": "Scalable storage solutions for secure data management and accessibility."
+    },
+    "switches": {
+      "name": "Switches",
+      "description": "Reliable network switches for efficient and connected business environments."
+    },
+    "servers": {
+      "name": "Servers",
+      "description": "Powerful server solutions designed for reliable business operations and performance."
+    },
+    "accessories": {
+      "name": "Accessories",
+      "description": "Essential networking tools and accessories for complete infrastructure setups."
+    },
+    "voipPhone": {
+      "name": "VoIP Phone",
+      "description": "Professional voice communication solutions for modern business environments."
+    },
+    "security": {
+      "name": "Security Systems",
+      "description": "Advanced security solutions designed to protect your people, systems, and assets."
+    },
+    "industrialSoftware": {
+      "name": "Industrial Software",
+      "description": "Software solutions designed to improve industrial operations, automation, and efficiency."
+    },
+    "software": {
+      "name": "Software",
+      "description": "Software solutions for managing, monitoring, and optimizing systems."
+    },
+    "ai": {
+      "name": "Artificial Intelligence",
+      "description": "AI-powered solutions that help businesses improve automation, insights, and decision-making."
+    },
+    "viewMore": "View more in detail"
+  },
+
+  "Footer": {
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "contactUs": "Contact Us",
+    "address": "Jeddah, Saudi Arabia",
+    "email": "Email",
+    "phone": "Phone",
+    "copyright": "MANNAR DIGITAL BUSINESS COMPANY. All rights reserved."
   }
 }

@@ -12,10 +12,6 @@ const navigation = [
     href: "/services",
   },
   {
-    key: "solutions",
-    href: "/solutions",
-  },
-  {
     key: "contact",
     href: "/contact",
   },

@@ -57,12 +57,13 @@ export default function Navbar() {
         <nav className={`navbar container ${scrolled ? "scrolled" : ""}`}>
           <Link href="/" className="navbar-logo">
             <Image
-              src="/images/logo.jpeg"
-              className="navbar-logo-image"
-              alt="MDBC Logo"
-              width={220}
-              height={70}
-              priority
+              src={
+                theme === "light" ? "/images/logoBG.png" : "/images/logo.jpeg"
+              }
+              alt="MANNAR DIGITAL BUSINESS COMPANY"
+              width={140}
+              height={80}
+              className={theme === "dark" ? "dark-logo" : "light-logo"}
             />
           </Link>
 

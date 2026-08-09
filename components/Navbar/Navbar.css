@@ -51,9 +51,9 @@
     box-shadow 0.35s ease;
 }
 
-/* ==========================================
+/* =====================================================
    Navbar On Scroll
-========================================== */
+===================================================== */
 
 .navbar.scrolled {
   width: 100%;
@@ -76,22 +76,64 @@
 .navbar-logo {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
 }
 
+.navbar-logo img {
+  display: block;
+  object-fit: contain;
+
+  transition:
+    width 0.35s ease,
+    height 0.35s ease,
+    transform 0.3s ease;
+}
+
+/* Normal logo size */
 .navbar-logo-image {
-  height: 60px;
-  width: auto;
+  width: 140px;
+  height: 70px;
 
-  transition: height 0.35s ease;
+  object-fit: contain;
 }
 
-.navbar.scrolled .navbar-logo-image {
-  height: 44px;
-}
-
+/* Logo hover */
 .navbar-logo:hover img {
   transform: scale(1.05);
+}
+
+/* =====================================================
+   Light Mode Logo
+===================================================== */
+
+.light-logo {
+  width: 140px;
+  height: 70px;
+
+  object-fit: contain;
+}
+
+/* =====================================================
+   Dark Mode Logo
+===================================================== */
+
+.dark-logo {
+  width: 140px;
+  height: 70px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+/* =====================================================
+   Logo On Scroll
+===================================================== */
+
+.navbar.scrolled .navbar-logo-image,
+.navbar.scrolled .light-logo,
+.navbar.scrolled .dark-logo {
+  width: 110px;
+  height: 58px;
 }
 
 /* =====================================================
@@ -111,9 +153,12 @@
 
 .navbar-links a {
   position: relative;
+
   font-size: 16px;
   font-weight: 500;
+
   color: var(--text);
+
   transition: color 0.3s ease;
 }
 
@@ -121,17 +166,25 @@
   color: var(--primary);
 }
 
-/* Animated underline */
+/* =====================================================
+   Animated Underline
+===================================================== */
 
 .navbar-links a::after {
   content: "";
+
   position: absolute;
+
   left: 0;
   bottom: -6px;
+
   width: 0;
   height: 2px;
+
   border-radius: 10px;
+
   background: var(--primary);
+
   transition: width 0.3s ease;
 }
 
@@ -146,6 +199,7 @@
 .navbar-actions {
   display: flex;
   align-items: center;
+
   gap: 18px;
 }
 
@@ -156,18 +210,25 @@
 .theme-btn {
   width: 44px;
   height: 44px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   border-radius: 50%;
+
   color: var(--text);
+
   font-size: 22px;
+
   transition: all 0.3s ease;
 }
 
 .theme-btn:hover {
   color: var(--primary);
+
   background: rgba(0, 87, 217, 0.08);
+
   transform: rotate(20deg);
 }
 
@@ -178,6 +239,7 @@
 .language-switcher {
   display: flex;
   align-items: center;
+
   gap: 8px;
 
   padding: 10px 16px;
@@ -194,6 +256,7 @@
 
 .language-switcher button {
   color: var(--text);
+
   font-size: 15px;
   font-weight: 500;
 
@@ -208,6 +271,7 @@
 
 .language-switcher .active-language {
   color: var(--primary);
+
   font-weight: 700;
 }
 
@@ -221,18 +285,25 @@
 
 .menu-btn {
   display: none;
+
   width: 44px;
   height: 44px;
+
   justify-content: center;
   align-items: center;
+
   border-radius: 50%;
+
   font-size: 28px;
+
   color: var(--text);
+
   transition: 0.3s ease;
 }
 
 .menu-btn:hover {
   color: var(--primary);
+
   background: rgba(0, 87, 217, 0.08);
 }
 
@@ -267,6 +338,7 @@
 @media (max-width: 1023px) {
   .navbar {
     height: 82px;
+
     padding: 0 30px;
   }
 
@@ -281,6 +353,20 @@
   .menu-btn {
     display: flex;
   }
+
+  .navbar-logo-image,
+  .light-logo,
+  .dark-logo {
+    width: 120px;
+    height: 60px;
+  }
+
+  .navbar.scrolled .navbar-logo-image,
+  .navbar.scrolled .light-logo,
+  .navbar.scrolled .dark-logo {
+    width: 100px;
+    height: 52px;
+  }
 }
 
 /* =====================================================
@@ -290,6 +376,7 @@
 @media (max-width: 767px) {
   .navbar {
     height: 76px;
+
     padding: 0 20px;
   }
 
@@ -297,12 +384,18 @@
     height: 64px;
   }
 
-  .navbar-logo-image {
-    height: 42px;
+  .navbar-logo-image,
+  .light-logo,
+  .dark-logo {
+    width: 100px;
+    height: 50px;
   }
 
-  .navbar.scrolled .navbar-logo-image {
-    height: 38px;
+  .navbar.scrolled .navbar-logo-image,
+  .navbar.scrolled .light-logo,
+  .navbar.scrolled .dark-logo {
+    width: 90px;
+    height: 46px;
   }
 
   .language-btn {
@@ -312,12 +405,14 @@
   .theme-btn {
     width: 38px;
     height: 38px;
+
     font-size: 18px;
   }
 
   .menu-btn {
     width: 38px;
     height: 38px;
+
     font-size: 24px;
   }
 
@@ -326,13 +421,15 @@
   }
 }
 
-/* ================================
+/* =====================================================
    Mobile Overlay
-================================ */
+===================================================== */
 
 .mobile-overlay {
   pointer-events: auto;
+
   position: fixed;
+
   inset: 0;
 
   background: rgba(15, 23, 42, 0.45);
@@ -347,12 +444,13 @@
 
 .mobile-overlay.active {
   opacity: 1;
+
   visibility: visible;
 }
 
-/* ================================
+/* =====================================================
    Mobile Menu
-================================ */
+===================================================== */
 
 .mobile-menu {
   position: fixed;
@@ -389,12 +487,13 @@
   right: 0;
 }
 
-/* ================================
-   Header
-================================ */
+/* =====================================================
+   Mobile Menu Header
+===================================================== */
 
 .mobile-menu-header {
   display: flex;
+
   justify-content: flex-end;
 }
 
@@ -403,6 +502,7 @@
   height: 44px;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
@@ -415,15 +515,16 @@
   cursor: pointer;
 }
 
-/* ================================
-   Links
-================================ */
+/* =====================================================
+   Mobile Links
+===================================================== */
 
 .mobile-links {
   margin-top: 40px;
 
   display: flex;
   flex-direction: column;
+
   gap: 24px;
 }
 
@@ -440,69 +541,15 @@
   color: var(--primary);
 }
 
+/* =====================================================
+   Desktop - Hide Mobile Menu
+===================================================== */
+
 @media (min-width: 1024px) {
   .mobile-menu,
   .mobile-overlay {
     display: none;
   }
-}
-
-/* ================================
-   Language CSS
-================================ */
-
-.mobile-language {
-  margin-top: 40px;
-
-  display: flex;
-  gap: 10px;
-
-  color: var(--text);
-
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.mobile-language .active-language {
-  color: var(--primary);
-}
-
-.mobile-language .divider {
-  opacity: 0.5;
-}
-
-/* =====================================================
-   RTL Support
-===================================================== */
-
-[dir="rtl"] .navbar {
-  direction: rtl;
-}
-
-[dir="rtl"] .navbar-links {
-  direction: rtl;
-}
-
-[dir="rtl"] .navbar-actions {
-  direction: rtr;
-}
-
-[dir="rtl"] .mobile-menu {
-  right: auto;
-  left: -100%;
-}
-
-[dir="rtl"] .mobile-menu.active {
-  left: 0;
-}
-
-[dir="rtl"] .mobile-menu-header {
-  justify-content: flex-start;
-}
-
-[dir="rtl"] .mobile-links {
-  direction: rtl;
-  text-align: right;
 }
 
 /* =====================================================
@@ -513,6 +560,7 @@
   margin-top: 40px;
 
   display: flex;
+
   align-items: center;
 
   gap: 8px;
@@ -557,11 +605,64 @@
   color: var(--primary);
 }
 
+/* =====================================================
+   RTL Support
+===================================================== */
+
+[dir="rtl"] .navbar {
+  direction: rtl;
+}
+
+[dir="rtl"] .navbar-links {
+  direction: rtl;
+}
+
+[dir="rtl"] .navbar-actions {
+  direction: rtl;
+}
+
+/* =====================================================
+   RTL Mobile Menu
+===================================================== */
+
+[dir="rtl"] .mobile-menu {
+  right: auto;
+
+  left: -100%;
+
+  border-left: none;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 10px 0 40px rgba(0, 0, 0, 0.15);
+
+  transition: left 0.35s ease;
+}
+
+[dir="rtl"] .mobile-menu.active {
+  left: 0;
+}
+
+[dir="rtl"] .mobile-menu-header {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .mobile-links {
+  direction: rtl;
+
+  text-align: right;
+}
+
+/* =====================================================
+   Mobile Language Direction
+===================================================== */
+
 [dir="ltr"] .mobile-language {
   justify-content: flex-start;
 }
 
 [dir="rtl"] .mobile-language {
   justify-content: flex-end;
+
   direction: ltr;
 }
