@@ -41,10 +41,6 @@ const services = [
     image: "/images/HomeServices/security.jpg",
   },
   {
-    key: "industrialSoftware",
-    image: "/images/HomeServices/industrial-software.jpg",
-  },
-  {
     key: "software",
     image: "/images/HomeServices/software.jpg",
   },

@@ -1,0 +1,822 @@
+/* =====================================================
+   About Page Hero
+===================================================== */
+
+.about-page-hero {
+  width: 100%;
+  min-height: 420px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--section-alt);
+
+  text-align: center;
+}
+
+.about-page-hero-content {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  max-width: 70%;
+
+  padding: 50px 20px 80px 20px;
+}
+
+/* =====================================================
+   Hero Badge
+===================================================== */
+
+.about-page-badge {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 20px;
+
+  margin-bottom: 20px;
+
+  border-radius: 40px;
+
+  background: rgba(0, 87, 217, 0.1);
+
+  color: var(--primary);
+
+  font-size: 30px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+/* =====================================================
+   Hero Title
+===================================================== */
+
+.about-page-hero h3 {
+  margin: 0 0 20px;
+
+  font-size: clamp(42px, 6vw, 55px);
+
+  line-height: 1.1;
+
+  font-weight: 700;
+
+  color: var(--text);
+}
+
+/* =====================================================
+   Hero Description
+===================================================== */
+
+.about-page-hero p {
+  max-width: 700px;
+
+  margin: 0;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  color: var(--text-light);
+}
+
+/* =====================================================
+   Company Overview
+===================================================== */
+
+.about-overview {
+  width: 100%;
+
+  padding: 50px 0;
+
+  background: #e2e2ff;
+}
+
+/* =====================================================
+   Section Heading
+===================================================== */
+
+.about-section-heading {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  margin-bottom: 55px;
+}
+
+.about-section-heading span {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 20px;
+
+  margin-bottom: 10px;
+
+  border-radius: 40px;
+
+  background: rgba(0, 87, 217, 0.1);
+
+  color: var(--primary);
+
+  font-size: 30px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.about-section-heading h2 {
+  margin: 0;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  color: var(--text);
+}
+
+/* =====================================================
+   Overview Content
+===================================================== */
+
+.about-overview-content {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 70px;
+}
+
+/* =====================================================
+   Overview Text
+===================================================== */
+
+.about-overview-text {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+.about-overview-text p {
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+
+  color: var(--text-light);
+}
+
+/* =====================================================
+   Overview Image
+===================================================== */
+
+.about-overview-image {
+  flex: 1;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.about-overview-logo {
+  display: block;
+
+  width: 100%;
+  max-width: 420px;
+
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 20px;
+}
+
+/* =====================================================
+   Information Sections
+===================================================== */
+
+.about-info-section {
+  width: 100%;
+
+  padding: 90px 0;
+
+  background: var(--background);
+}
+
+.about-section-alt {
+  background: #e2e2ff;
+}
+
+.about-info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-info-heading {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.about-info-heading span {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 20px;
+
+  margin-bottom: 15px;
+
+  border-radius: 40px;
+
+  background: rgba(0, 87, 217, 0.1);
+
+  color: var(--primary);
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.about-info-heading h2 {
+  margin: 0;
+
+  font-size: clamp(34px, 4vw, 52px);
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  color: var(--text);
+}
+
+.about-info-text {
+  flex: 1;
+  text-align: center;
+}
+
+.about-info-text p {
+  margin: 0;
+
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  color: var(--text-light);
+}
+
+/* =====================================================
+   Major Goals
+===================================================== */
+
+.about-goals {
+  width: 100%;
+
+  padding: 60px 0;
+}
+
+.about-goals-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+.about-goal-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 30px;
+
+  background: var(--surface);
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(15, 23, 42, 0.08);
+
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-goal-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.1);
+}
+
+.about-goal-number {
+  flex-shrink: 0;
+
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+
+  color: #fff;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.about-goal-content {
+  flex: 1;
+}
+
+.about-goal-content h3 {
+  margin: 0 0 10px;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  color: var(--text);
+}
+
+.about-goal-content p {
+  margin: 0;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: var(--text-light);
+}
+
+/* =====================================================
+   Why Choose Us
+===================================================== */
+
+.about-why-us {
+  width: 100%;
+
+  padding: 100px 0;
+}
+
+.about-why-content {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.about-why-heading {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.about-why-heading span {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 20px;
+
+  margin-bottom: 15px;
+
+  border-radius: 40px;
+
+  background: rgba(0, 87, 217, 0.1);
+
+  color: var(--primary);
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.about-why-heading h2 {
+  margin: 0;
+
+  font-size: clamp(34px, 4vw, 52px);
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  color: var(--text);
+}
+
+.about-why-content > p {
+  margin: 0;
+
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  color: var(--text-light);
+}
+
+/* =====================================================
+   Dark Theme
+===================================================== */
+
+[data-theme="dark"] .about-overview {
+  background: var(--surface);
+}
+
+[data-theme="dark"] .about-section-alt {
+  background: var(--surface);
+}
+
+[data-theme="dark"] .about-goals {
+  background: var(--surface);
+}
+
+[data-theme="dark"] .about-page-badge,
+[data-theme="dark"] .about-section-heading span,
+[data-theme="dark"] .about-info-heading span,
+[data-theme="dark"] .about-why-heading span {
+  background: rgba(79, 140, 255, 0.12);
+}
+
+[data-theme="dark"] .about-goal-card {
+  border-color: rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* =====================================================
+   Tablet
+===================================================== */
+
+@media (max-width: 1023px) {
+  /*  Company Overview */
+
+  .about-overview {
+    padding: 75px 0;
+  }
+
+  .about-overview-content {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+
+    text-align: center;
+  }
+
+  /*
+     Allow the children inside the text wrapper
+     to participate in the main flex order.
+  */
+  .about-overview-text {
+    display: contents;
+  }
+
+  /* 1. Company Overview Heading */
+
+  .about-section-heading {
+    order: 1;
+
+    padding: 0 5px 30px 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    margin-bottom: 0;
+  }
+
+  /* 2. Company Logo */
+
+  .about-overview-image {
+    order: 2;
+
+    padding: 0 5px 30px 0;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+  }
+
+  .about-overview-logo {
+    max-width: 360px;
+  }
+
+  /* 3. Description */
+
+  .about-overview-text p {
+    order: 3;
+
+    width: 100%;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  /*   Information Sections  */
+
+  .about-info-section {
+    padding: 75px 0;
+  }
+
+  .about-info-content {
+    flex-direction: column;
+
+    gap: 35px;
+
+    text-align: center;
+  }
+
+  .about-info-heading {
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .about-info-text {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .about-info-text p {
+    max-width: 750px;
+
+    margin: 0 auto;
+  }
+
+  /* Goals */
+
+  .about-goals {
+    padding: 75px 0;
+  }
+
+  .about-goal-card {
+    text-align: center;
+
+    flex-direction: column;
+
+    justify-content: center;
+  }
+
+  .about-goal-content {
+    width: 100%;
+  }
+
+  /*  Why Us  */
+
+  .about-why-us {
+    padding: 75px 0;
+  }
+}
+
+/* =====================================================
+   Mobile
+===================================================== */
+
+@media (max-width: 767px) {
+  .about-page-hero {
+    min-height: 360px;
+  }
+
+  .about-page-hero-content {
+    padding: 60px 20px;
+  }
+
+  .about-page-badge {
+    font-size: 20px;
+
+    padding: 7px 16px;
+  }
+
+  .about-page-hero h3 {
+    font-size: 26px;
+
+    margin-bottom: 16px;
+  }
+
+  .about-page-hero p {
+    font-size: 16px;
+
+    line-height: 1.7;
+  }
+
+  /* Overview */
+
+  .about-overview {
+    padding: 60px 0;
+  }
+
+  .about-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .about-section-heading h2 {
+    font-size: 32px;
+  }
+
+  .about-overview-content {
+    gap: 35px;
+  }
+
+  .about-overview-text {
+    gap: 18px;
+  }
+
+  .about-overview-text p {
+    font-size: 16px;
+
+    line-height: 1.8;
+  }
+
+  .about-overview-logo {
+    max-width: 280px;
+  }
+
+  /* Information */
+
+  .about-info-section {
+    padding: 60px 0;
+  }
+
+  .about-info-content {
+    gap: 25px;
+  }
+
+  .about-info-heading span {
+    font-size: 14px;
+
+    padding: 7px 16px;
+  }
+
+  .about-info-heading h2 {
+    font-size: 32px;
+  }
+
+  .about-info-text p {
+    font-size: 16px;
+
+    line-height: 1.8;
+  }
+
+  /* Goals */
+
+  .about-goals {
+    padding: 60px 0;
+  }
+
+  .about-goal-card {
+    padding: 25px 20px;
+
+    gap: 20px;
+  }
+
+  .about-goal-number {
+    width: 60px;
+    height: 60px;
+
+    font-size: 18px;
+  }
+
+  .about-goal-content h3 {
+    font-size: 21px;
+  }
+
+  .about-goal-content p {
+    font-size: 15px;
+
+    line-height: 1.8;
+  }
+
+  /* Why Us */
+
+  .about-why-us {
+    padding: 60px 0;
+  }
+
+  .about-why-heading span {
+    font-size: 14px;
+
+    padding: 7px 16px;
+  }
+
+  .about-why-heading h2 {
+    font-size: 32px;
+  }
+
+  .about-why-content > p {
+    font-size: 16px;
+
+    line-height: 1.8;
+  }
+}
+
+/* =====================================================
+   RTL Support
+===================================================== */
+
+[dir="rtl"] .about-overview-text {
+  text-align: right;
+}
+
+[dir="rtl"] .about-info-heading {
+  align-items: flex-start;
+
+  text-align: right;
+}
+
+[dir="rtl"] .about-info-text {
+  text-align: right;
+}
+
+[dir="rtl"] .about-goal-card {
+  direction: rtl;
+}
+
+[dir="rtl"] .about-goal-content {
+  text-align: right;
+}
+
+[dir="rtl"] .about-why-content {
+  direction: rtl;
+}
+
+@media (max-width: 1023px) {
+  [dir="rtl"] .about-overview-text {
+    text-align: center;
+  }
+
+  [dir="rtl"] .about-info-heading {
+    align-items: center;
+
+    text-align: center;
+  }
+
+  [dir="rtl"] .about-info-text {
+    text-align: center;
+  }
+
+  [dir="rtl"] .about-goal-card {
+    direction: rtl;
+  }
+
+  [dir="rtl"] .about-goal-content {
+    text-align: center;
+  }
+
+  [dir="rtl"] .about-why-content {
+    text-align: center;
+  }
+}

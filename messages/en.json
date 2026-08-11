@@ -24,61 +24,177 @@
 
   "About": {
     "label": "About Us",
-    "title": "Building Digital Solutions That Move Businesses Forward",
+    "title": "Building digital solutions that move businesses forward",
     "description": "MANNAR DIGITAL BUSINESS COMPANY is focused on delivering reliable technology and digital business solutions designed around the evolving needs of modern organizations.",
     "description2": "We combine technology, creativity, and business understanding to help organizations improve their digital presence, streamline operations, and create sustainable opportunities for growth.",
     "companyLogoAlt": "MANNAR DIGITAL BUSINESS COMPANY Logo",
     "knowMore": "Know More"
   },
+
   "HomeServices": {
     "label": "Our Services",
     "title": "Technology Solutions for Your Business",
     "description": "Reliable networking and technology solutions designed to support modern business needs.",
+
     "routers": {
       "name": "Routers",
       "description": "Reliable routing solutions for secure and efficient network connectivity."
     },
+
     "wireless": {
       "name": "Wireless",
       "description": "High-performance wireless solutions for seamless and reliable connectivity."
     },
+
     "storage": {
       "name": "Storage Systems",
       "description": "Scalable storage solutions for secure data management and accessibility."
     },
+
     "switches": {
       "name": "Switches",
       "description": "Reliable network switches for efficient and connected business environments."
     },
+
     "servers": {
       "name": "Servers",
       "description": "Powerful server solutions designed for reliable business operations and performance."
     },
+
     "accessories": {
       "name": "Accessories",
       "description": "Essential networking tools and accessories for complete infrastructure setups."
     },
+
     "voipPhone": {
       "name": "VoIP Phone",
       "description": "Professional voice communication solutions for modern business environments."
     },
+
     "security": {
       "name": "Security Systems",
       "description": "Advanced security solutions designed to protect your people, systems, and assets."
     },
-    "industrialSoftware": {
-      "name": "Industrial Software",
-      "description": "Software solutions designed to improve industrial operations, automation, and efficiency."
-    },
+
     "software": {
       "name": "Software",
-      "description": "Software solutions for managing, monitoring, and optimizing systems."
+      "description": "Software solutions for managing, monitoring, automating, and optimizing business and operational processes, including industrial and machinery applications."
     },
+
     "ai": {
       "name": "Artificial Intelligence",
       "description": "AI-powered solutions that help businesses improve automation, insights, and decision-making."
     },
+
     "viewMore": "View more in detail"
+  },
+
+  "AboutPage": {
+    "badge": "ABOUT US",
+    "title": "Building digital solutions that move businesses forward",
+    "description": "MANNAR DIGITAL BUSINESS COMPANY delivers reliable technology solutions and quality products to help businesses operate smarter, more efficiently, and with confidence.",
+
+    "overviewLabel": "OUR COMPANY",
+    "overviewTitle": "Company Overview",
+    "overviewDescription1": "MANNAR DIGITAL BUSINESS COMPANY is committed to providing reliable technology products and digital solutions that support businesses in their growth and development.",
+    "overviewDescription2": "We focus on delivering quality products, professional service, and practical technology solutions while building long-term relationships with our customers and partners.",
+    "companyLogoAlt": "MANNAR DIGITAL BUSINESS COMPANY Logo",
+
+    "missionLabel": "OUR MISSION",
+    "missionTitle": "Our Mission",
+    "missionDescription": "Our mission is to provide reliable, innovative, and integrated technology solutions that help businesses operate smarter, safer, and more efficiently. We deliver a comprehensive range of solutions including network infrastructure, routers, wireless technologies, switches, servers, storage systems, networking accessories, VoIP communication, security systems, industrial and machinery software, software solutions, and artificial intelligence technologies. Through quality products, professional expertise, responsive customer care, and dependable after-sales support, we strive to understand each customer's needs and provide practical, scalable, and cost-effective solutions that improve performance, strengthen security, support digital transformation, and create long-term business value.",
+
+    "visionLabel": "OUR VISION",
+    "visionTitle": "Our Vision",
+    "visionDescription": "Our vision is become a globally recognized leader in network technology, communications, IT solutions, electronic security, and innovative digital technologies. We aim to empower businesses with modern, reliable, and forward-thinking solutions, supported by professional expertise and dedicated customer service. Our vision is to build long-term partnerships by delivering practical technology solutions, strategic guidance, and specialized support that help organizations improve their operations and achieve sustainable growth.",
+
+    "goalsLabel": "OUR MAJOR GOALS",
+    "goalsTitle": "Major Goals",
+
+    "customerCare": {
+      "title": "Customer Care",
+      "description": "Building strong customer relationships through responsive support, understanding customer needs, and delivering solutions that create long-term value."
+    },
+
+    "highQuality": {
+      "title": "High Quality Products",
+      "description": "Providing reliable, high-quality technology products and solutions that meet professional standards and the evolving needs of modern businesses."
+    },
+
+    "afterSales": {
+      "title": "After Sales",
+      "description": "Supporting our customers beyond the initial purchase through dependable after-sales service, assistance, and ongoing technical support."
+    },
+
+    "whyChooseLabel": "WHY CHOOSE US",
+    "whyChooseTitle": "Why Choose MDBC",
+    "whyChooseDescription": "We combine quality products, reliable technology solutions, professional service, and customer-focused support to provide businesses with dependable technology solutions."
+  },
+
+  "Services": {
+    "hero": {
+      "label": "Our Services",
+      "title": "Technology Solutions for Modern Businesses",
+      "description": "Reliable technology solutions designed to support your business, strengthen your operations, and drive sustainable digital growth."
+    },
+
+    "section": {
+      "label": "Our Solutions",
+      "title": "Technology Solutions Designed Around Your Business",
+      "description": "We provide reliable networking, communication, security, software, and artificial intelligence solutions to support modern business operations."
+    },
+
+    "items": {
+      "routers": {
+        "name": "Routers",
+        "description": "Reliable routing solutions designed to provide secure, stable, and efficient network connectivity for modern businesses."
+      },
+
+      "wireless": {
+        "name": "Wireless",
+        "description": "High-performance wireless solutions designed to provide seamless and reliable connectivity across business environments."
+      },
+
+      "storage": {
+        "name": "Storage Systems",
+        "description": "Secure and scalable storage solutions designed to support reliable data management, accessibility, and business continuity."
+      },
+
+      "switches": {
+        "name": "Switches",
+        "description": "Reliable network switching solutions designed to improve connectivity, performance, and communication across business networks."
+      },
+
+      "servers": {
+        "name": "Servers",
+        "description": "Powerful and reliable server solutions designed to support business applications, infrastructure, data, and day-to-day operations."
+      },
+
+      "accessories": {
+        "name": "Accessories",
+        "description": "Essential networking tools and accessories designed to complete and support professional technology infrastructure installations."
+      },
+
+      "voipPhone": {
+        "name": "VoIP Phone",
+        "description": "Professional voice communication solutions designed to provide reliable and efficient business communication through modern VoIP technology."
+      },
+
+      "security": {
+        "name": "Security Systems",
+        "description": "Advanced security solutions designed to protect people, systems, facilities, and business assets through modern security technology."
+      },
+
+      "software": {
+        "name": "Software",
+        "description": "Software solutions designed to manage, monitor, automate, and optimize business operations, including industrial and machinery-related applications."
+      },
+
+      "ai": {
+        "name": "Artificial Intelligence",
+        "description": "AI-powered solutions designed to help businesses automate processes, gain valuable insights, improve decision-making, and drive innovation."
+      }
+    }
   },
 
   "Footer": {

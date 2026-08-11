@@ -42,27 +42,27 @@ export default function Navbar() {
     });
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrolled(window.scrollY > 50);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
   return (
     <>
       <header className="navbar-wrapper">
-        <nav className={`navbar container ${scrolled ? "scrolled" : ""}`}>
+        <nav className="navbar container">
           <Link href="/" className="navbar-logo">
             <Image
               src={
                 theme === "light" ? "/images/logoBG.png" : "/images/logo.jpeg"
               }
               alt="MANNAR DIGITAL BUSINESS COMPANY"
-              width={140}
-              height={80}
+              width={150}
+              height={150}
               className={theme === "dark" ? "dark-logo" : "light-logo"}
             />
           </Link>

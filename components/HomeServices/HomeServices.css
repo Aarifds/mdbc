@@ -19,6 +19,7 @@
 
 .services-label {
   display: inline-block;
+
   margin-bottom: 12px;
 
   font-size: 45px;
@@ -32,7 +33,9 @@
 
 .services-heading h4 {
   margin-bottom: 15px;
+
   line-height: 1.15;
+
   color: var(--text);
 }
 
@@ -51,6 +54,7 @@
   display: none;
 
   justify-content: center;
+
   gap: 10px;
 
   margin-bottom: 20px;
@@ -78,19 +82,27 @@
 
 .services-arrow:hover {
   background: var(--primary);
+
   color: #fff;
 
   transform: translateY(-2px);
 }
 
 /* =====================================================
-   Services Grid
+   Services Cards
+   FLEXBOX - Desktop
 ===================================================== */
 
 .services-grid {
-  display: grid;
+  width: 100%;
 
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  align-items: stretch;
 
   gap: 24px;
 }
@@ -100,6 +112,16 @@
 ===================================================== */
 
 .service-card {
+  /*
+    4 cards per row
+
+    3 gaps × 24px = 72px
+  */
+
+  flex: 0 0 calc((100% - 72px) / 4);
+
+  max-width: calc((100% - 72px) / 4);
+
   min-width: 0;
 
   overflow: hidden;
@@ -120,6 +142,10 @@
     box-shadow 0.3s ease,
     border-color 0.3s ease;
 }
+
+/* =====================================================
+   Service Card Hover
+===================================================== */
 
 .service-card:hover {
   transform: translateY(-6px);
@@ -203,6 +229,7 @@
 
 .services-more {
   display: flex;
+
   justify-content: center;
   align-items: center;
 
@@ -211,6 +238,7 @@
 
 .services-more-button {
   display: inline-flex;
+
   align-items: center;
   justify-content: center;
 
@@ -219,6 +247,7 @@
   border-radius: 40px;
 
   background: var(--primary);
+
   color: #fff;
 
   font-size: 15px;
@@ -258,6 +287,7 @@
 
 /* =====================================================
    Tablet
+   Horizontal Flex Slider
 ===================================================== */
 
 @media (max-width: 1023px) {
@@ -265,8 +295,48 @@
     padding: 80px 0;
   }
 
+  /* Show controls on tablet */
+
+  .services-controls {
+    display: flex;
+  }
+
+  /* Horizontal slider */
+
   .services-grid {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+
+    align-items: stretch;
+
+    gap: 20px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    padding: 5px 5px 20px;
+
+    scrollbar-width: none;
+  }
+
+  .services-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Tablet Card */
+
+  .service-card {
+    flex: 0 0 280px;
+
+    max-width: 280px;
+
+    scroll-snap-align: start;
   }
 
   .service-image {
@@ -275,13 +345,16 @@
 }
 
 /* =====================================================
-   Tablet / Mobile Slider
+   Mobile
+   Horizontal Flex Slider
 ===================================================== */
 
 @media (max-width: 767px) {
   .home-services {
     padding: 70px 0;
   }
+
+  /* Heading */
 
   .services-heading {
     margin-bottom: 35px;
@@ -295,19 +368,29 @@
     font-size: 16px;
   }
 
-  /* Show arrows */
+  /* Controls */
+
   .services-controls {
     display: flex;
   }
 
   /* Horizontal slider */
+
   .services-grid {
     display: flex;
+
+    flex-wrap: nowrap;
+
     gap: 20px;
+
     overflow-x: auto;
+
     scroll-behavior: smooth;
+
     scroll-snap-type: x mandatory;
+
     padding: 5px 5px 20px;
+
     scrollbar-width: none;
   }
 
@@ -315,16 +398,23 @@
     display: none;
   }
 
-  /* Mobile card */
+  /* Mobile Card */
+
   .service-card {
     flex: 0 0 85%;
+
+    max-width: 85%;
 
     scroll-snap-align: center;
   }
 
+  /* Mobile Image */
+
   .service-image {
     height: 230px;
   }
+
+  /* Mobile Content */
 
   .service-content {
     padding: 22px 18px 26px;
@@ -333,4 +423,50 @@
   .service-content h3 {
     font-size: 20px;
   }
+}
+
+/* =====================================================
+   Small Mobile
+===================================================== */
+
+@media (max-width: 480px) {
+  .services-label {
+    font-size: 34px;
+  }
+
+  .services-heading h2 {
+    font-size: 30px;
+  }
+
+  .services-heading p {
+    font-size: 15px;
+  }
+
+  .service-card {
+    flex: 0 0 88%;
+
+    max-width: 88%;
+  }
+
+  .service-image {
+    height: 210px;
+  }
+}
+
+/* =====================================================
+   RTL Support
+===================================================== */
+
+[dir="rtl"] .services-heading {
+  direction: rtl;
+}
+
+[dir="rtl"] .service-content {
+  direction: rtl;
+
+  text-align: center;
+}
+
+[dir="rtl"] .service-content p {
+  text-align: center;
 }

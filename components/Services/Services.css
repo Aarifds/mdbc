@@ -1,0 +1,664 @@
+/* =====================================================
+   Services List
+===================================================== */
+
+.services-list {
+  width: 100%;
+  padding: 80px 0 100px;
+}
+
+/* =====================================================
+   Section Heading
+===================================================== */
+
+.services-list-heading {
+  max-width: 1000px;
+  margin: 0 auto 45px;
+
+  text-align: center;
+}
+
+.services-list-heading span {
+  display: inline-block;
+
+  margin-bottom: 14px;
+  padding: 7px 20px;
+
+  border-radius: 30px;
+
+  background: rgba(0, 87, 217, 0.1);
+
+  color: var(--primary);
+
+  font-size: 18px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.services-list-heading h2 {
+  margin: 0 0 14px;
+
+  color: var(--text);
+
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+
+  line-height: 1.15;
+}
+
+.services-list-heading p {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  color: var(--text-light);
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   Desktop Services List
+===================================================== */
+
+.services-desktop-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+/* =====================================================
+   Service Row
+===================================================== */
+
+.service-row {
+  width: 100%;
+  min-height: 160px;
+
+  display: flex;
+  align-items: stretch;
+
+  background: var(--surface);
+
+  border: 1px solid rgba(128, 128, 128, 0.12);
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.service-row:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(0, 87, 217, 0.25);
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+}
+
+/* =====================================================
+   Reverse Row
+===================================================== */
+
+.service-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* =====================================================
+   Desktop Image
+===================================================== */
+
+.service-row-image {
+  position: relative;
+
+  flex: 0 0 36%;
+
+  min-height: 160px;
+
+  overflow: hidden;
+
+  background: #f8fafc;
+}
+
+.service-row-image img {
+  object-fit: contain;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 10px;
+
+  transition: transform 0.5s ease;
+}
+
+.service-row:hover .service-row-image img {
+  transform: scale(1.04);
+}
+
+/* =====================================================
+   Desktop Content
+===================================================== */
+
+.service-row-content {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+
+  padding: 25px 42px;
+
+  gap: 24px;
+}
+
+/* =====================================================
+   Service Number
+===================================================== */
+
+.service-number {
+  flex-shrink: 0;
+
+  min-width: 60px;
+
+  padding-right: 24px;
+
+  border-right: 1px solid rgba(128, 128, 128, 0.25);
+
+  color: var(--primary);
+
+  font-size: 26px;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  text-align: center;
+}
+
+/* =====================================================
+   Desktop Title
+===================================================== */
+
+.service-row-content h3 {
+  flex-shrink: 0;
+
+  width: 230px;
+
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 27px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+/* =====================================================
+   Desktop Description
+===================================================== */
+
+.service-row-content p {
+  max-width: 560px;
+
+  margin: 0;
+
+  color: var(--text-light);
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   Mobile / Tablet Slider Wrapper
+===================================================== */
+
+.services-mobile-slider-wrapper {
+  position: relative;
+
+  display: none;
+
+  width: 100%;
+}
+
+/* =====================================================
+   Mobile / Tablet Slider
+===================================================== */
+
+.services-mobile-slider {
+  width: 100%;
+
+  display: flex;
+
+  gap: 20px;
+
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: none;
+
+  padding: 10px 5px 20px;
+}
+
+.services-mobile-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* =====================================================
+   Tablet / Mobile Card
+===================================================== */
+
+.service-card {
+  flex: 0 0 82%;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  scroll-snap-align: center;
+
+  background: var(--surface);
+
+  border: 1px solid rgba(128, 128, 128, 0.15);
+
+  border-radius: 18px;
+
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* =====================================================
+   Card Image
+===================================================== */
+
+.service-card-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 240px;
+
+  overflow: hidden;
+
+  background: #f8fafc;
+}
+
+.service-card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  padding: 15px;
+
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-card-image img {
+  transform: scale(1.04);
+}
+
+/* =====================================================
+   Card Content
+===================================================== */
+
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px 22px 30px;
+
+  text-align: center;
+}
+
+/* =====================================================
+   Hide Number on Tablet / Mobile
+===================================================== */
+
+.service-card-content .service-number {
+  display: none;
+}
+
+/* =====================================================
+   Card Title
+===================================================== */
+
+.service-card-content h3 {
+  width: 100%;
+
+  margin: 0 0 12px;
+
+  color: var(--text);
+
+  font-size: 23px;
+  font-weight: 700;
+
+  line-height: 1.3;
+
+  text-align: center;
+}
+
+/* =====================================================
+   Card Description
+===================================================== */
+
+.service-card-content p {
+  max-width: 500px;
+
+  margin: 0 auto;
+
+  color: var(--text-light);
+
+  font-size: 15px;
+
+  line-height: 1.65;
+
+  text-align: center;
+}
+
+/* =====================================================
+   Carousel Arrows
+===================================================== */
+
+.services-slider-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 10;
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--surface);
+
+  color: var(--text);
+
+  border: 1px solid rgba(128, 128, 128, 0.18);
+
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.15);
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.services-slider-arrow:hover {
+  background: var(--primary);
+
+  color: #ffffff;
+
+  box-shadow: 0 8px 25px rgba(0, 87, 217, 0.25);
+}
+
+.services-slider-arrow-left {
+  left: -18px;
+}
+
+.services-slider-arrow-right {
+  right: -18px;
+}
+
+/* =====================================================
+   Dark Theme
+===================================================== */
+
+[data-theme="dark"] .service-row,
+[data-theme="dark"] .service-card {
+  border-color: rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .service-row:hover {
+  border-color: rgba(0, 87, 217, 0.45);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .service-row-image,
+[data-theme="dark"] .service-card-image {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .service-number {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .services-slider-arrow {
+  border-color: rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* =====================================================
+   Tablet
+===================================================== */
+
+@media (max-width: 1023px) {
+  .services-list {
+    padding: 70px 0 80px;
+  }
+
+  /* Hide desktop layout */
+  .services-desktop-list {
+    display: none;
+  }
+
+  /* Show carousel */
+  .services-mobile-slider-wrapper {
+    display: block;
+  }
+
+  .services-list-heading {
+    margin-bottom: 40px;
+  }
+
+  .services-list-heading h2 {
+    font-size: 38px;
+  }
+
+  .services-list-heading p {
+    font-size: 16px;
+  }
+
+  .service-card {
+    flex: 0 0 68%;
+  }
+
+  .service-card-image {
+    height: 230px;
+  }
+
+  .services-slider-arrow-left {
+    left: -12px;
+  }
+
+  .services-slider-arrow-right {
+    right: -12px;
+  }
+}
+
+/* =====================================================
+   Mobile
+===================================================== */
+
+@media (max-width: 767px) {
+  .services-list {
+    padding: 60px 0 70px;
+  }
+
+  .services-list-heading {
+    margin-bottom: 30px;
+
+    padding: 0 15px;
+  }
+
+  .services-list-heading span {
+    margin-bottom: 10px;
+
+    padding: 6px 16px;
+
+    font-size: 14px;
+  }
+
+  .services-list-heading h2 {
+    font-size: 30px;
+
+    line-height: 1.2;
+  }
+
+  .services-list-heading p {
+    font-size: 15px;
+
+    line-height: 1.6;
+  }
+
+  .services-mobile-slider {
+    gap: 16px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .service-card {
+    flex: 0 0 82%;
+
+    border-radius: 16px;
+  }
+
+  .service-card-image {
+    height: 210px;
+  }
+
+  .service-card-image img {
+    padding: 12px;
+  }
+
+  .service-card-content {
+    padding: 22px 18px 26px;
+  }
+
+  .service-card-content h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+  }
+
+  .service-card-content p {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  /* Carousel arrows */
+  .services-slider-arrow {
+    width: 40px;
+    height: 40px;
+
+    font-size: 21px;
+  }
+
+  .services-slider-arrow-left {
+    left: -5px;
+  }
+
+  .services-slider-arrow-right {
+    right: -5px;
+  }
+}
+
+/* =====================================================
+   Small Mobile
+===================================================== */
+
+@media (max-width: 480px) {
+  .services-list {
+    padding: 50px 0 60px;
+  }
+
+  .services-list-heading h2 {
+    font-size: 27px;
+  }
+
+  .service-card {
+    flex: 0 0 86%;
+  }
+
+  .service-card-image {
+    height: 190px;
+  }
+
+  .service-card-content h3 {
+    font-size: 20px;
+  }
+
+  .service-card-content p {
+    font-size: 13px;
+  }
+}
+
+/* =====================================================
+   RTL
+===================================================== */
+
+[dir="rtl"] .service-row-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .service-row-reverse {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .service-number {
+  border-right: none;
+
+  border-left: 1px solid rgba(128, 128, 128, 0.25);
+
+  padding-right: 0;
+  padding-left: 24px;
+}
+
+[dir="rtl"] .service-card-content {
+  direction: rtl;
+  text-align: center;
+}
+
+[dir="rtl"] .service-card-content h3,
+[dir="rtl"] .service-card-content p {
+  text-align: center;
+}
