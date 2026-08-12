@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import PageLoaderWrapper from "@/components/PageLoader/PageLoaderWrapper";
 
 export default async function LocaleLayout({ children, params }) {
   const { locale } = await params;
@@ -14,7 +15,9 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <div dir={locale === "ar" ? "rtl" : "ltr"}>{children}</div>
+      <div dir={locale === "ar" ? "rtl" : "ltr"}>
+        <PageLoaderWrapper>{children}</PageLoaderWrapper>
+      </div>
     </NextIntlClientProvider>
   );
 }
