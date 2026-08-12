@@ -86,7 +86,9 @@
       "description": "AI-powered solutions that help businesses improve automation, insights, and decision-making."
     },
 
-    "viewMore": "View more in detail"
+    "viewMore": "View more",
+
+    "viewAllDescription": "Explore all our technology solutions and services."
   },
 
   "AboutPage": {
@@ -139,7 +141,7 @@
     },
 
     "section": {
-      "label": "Our Solutions",
+      "label": "Our Services",
       "title": "Technology Solutions Designed Around Your Business",
       "description": "We provide reliable networking, communication, security, software, and artificial intelligence solutions to support modern business operations."
     },
@@ -194,6 +196,45 @@
         "name": "Artificial Intelligence",
         "description": "AI-powered solutions designed to help businesses automate processes, gain valuable insights, improve decision-making, and drive innovation."
       }
+    }
+  },
+
+  "Contact": {
+    "hero": {
+      "label": "Contact Us",
+      "title": "Let's Work Together",
+      "description": "Have a question, need a technology solution, or want to discuss a project? Our team is ready to help."
+    },
+
+    "information": {
+      "label": "Get In Touch",
+      "title": "We'd Love to Hear From You",
+      "description": "Contact us to learn more about our technology solutions or discuss how we can support your business.",
+      "addressTitle": "Address",
+      "address": "Jeddah, Saudi Arabia",
+      "phoneTitle": "Phone",
+      "phone": "+966 XX XXX XXXX",
+      "emailTitle": "Email",
+      "email": "info@mdbc.com",
+      "hoursTitle": "Working Hours",
+      "hours": "Sunday - Thursday, 9:00 AM - 6:00 PM"
+    },
+
+    "form": {
+      "label": "Send A Message",
+      "title": "Tell Us About Your Project",
+      "description": "Fill out the form below and our team will get back to you as soon as possible.",
+      "name": "Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "phone": "Phone",
+      "phonePlaceholder": "Enter your phone number",
+      "subject": "Subject",
+      "subjectPlaceholder": "Enter the subject",
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help you...",
+      "submit": "Send Message"
     }
   },
 

@@ -1,20 +1,5 @@
-"use client";
+import { redirect } from "next/navigation";
 
-import Navbar from "@/components/Navbar/Navbar";
-import HeroCarousel from "@/components/HeroCarousel/HeroCarousel";
-import About from "@/components/About/About";
-import HomeServices from "@/components/HomeServices/HomeServices";
-
-export default function Home() {
-  return (
-    <>
-      <Navbar />
-
-      <main>
-        <HeroCarousel />
-        <About />
-        <HomeServices />
-      </main>
-    </>
-  );
+export default function Page() {
+  redirect("/en");
 }
