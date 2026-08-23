@@ -351,3 +351,7 @@ html[lang="ar"] .about-description {
     border-radius: 22px;
   }
 }
+
+html[lang="ar"] .about-content {
+  direction: rtl;
+}
