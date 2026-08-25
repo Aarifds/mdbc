@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import {
   HiOutlineMapPin,
   HiOutlineEnvelope,
@@ -12,6 +12,7 @@ import "./Footer.css";
 
 export default function Footer() {
   const t = useTranslations("Footer");
+  const locale = useLocale();
 
   return (
     <footer className="footer">
@@ -60,16 +61,24 @@ export default function Footer() {
               <div className="footer-contact-item">
                 <HiOutlinePhone />
 
-                <span>{t("phone")}</span>
+                <span className="footer-phone" dir="ltr">
+                  {t("phone")}
+                </span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Copyright */}
         <div className="footer-bottom">
           <p>
-            © {new Date().getFullYear()} {t("copyright")}
+            ©{" "}
+            {locale === "ar"
+              ? String(new Date().getFullYear())
+                  .split("")
+                  .map((digit) => "٠١٢٣٤٥٦٧٨٩"[digit])
+                  .join("")
+              : new Date().getFullYear()}{" "}
+            {t("copyright")}
           </p>
         </div>
       </div>

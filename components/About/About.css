@@ -49,6 +49,10 @@
   direction: ltr;
 }
 
+[dir="rtl"] .about-content {
+  direction: rtl;
+}
+
 /* =====================================================
    About Label
 ===================================================== */
@@ -97,9 +101,6 @@
   line-height: 1.8;
 
   color: var(--text-light);
-
-  direction: ltr;
-  text-align: left;
 }
 
 /* Arabic text only */

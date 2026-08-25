@@ -4,8 +4,11 @@
 
 .hero-carousel {
   position: relative;
+  direction: ltr;
 
   width: min(94%, 1500px);
+
+  background: #000;
 
   height: 75vh;
   min-height: 600px;
@@ -26,16 +29,25 @@
 .hero-slide {
   position: absolute;
   inset: 0;
+  direction: ltr;
 
   opacity: 0;
-  visibility: hidden;
 
-  transition: opacity 0.8s ease;
+  z-index: 0;
+
+  pointer-events: none;
+
+  transition: opacity 0.8s ease-in-out;
+
+  background: #000;
 }
 
 .hero-slide.active {
   opacity: 1;
-  visibility: visible;
+
+  z-index: 1;
+
+  pointer-events: auto;
 }
 
 /* =====================================================

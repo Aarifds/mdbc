@@ -60,6 +60,7 @@ export default function Navbar() {
               width={150}
               height={150}
               className={theme === "dark" ? "dark-logo" : "light-logo"}
+              loading="eager"
             />
           </Link>
 

@@ -69,7 +69,9 @@ export default function Contact() {
 
             <div className="contact-info-content">
               <h3>{t("information.phoneTitle")}</h3>
-              <p>{t("information.phone")}</p>
+              <p className="contact-phone" dir="ltr">
+                {t("information.phone")}
+              </p>
             </div>
           </div>
 
@@ -88,7 +90,7 @@ export default function Contact() {
 
           {/* Working Hours */}
 
-          <div className="contact-info-item">
+          {/* <div className="contact-info-item">
             <div className="contact-info-icon">
               <HiOutlineClock />
             </div>
@@ -97,7 +99,7 @@ export default function Contact() {
               <h3>{t("information.hoursTitle")}</h3>
               <p>{t("information.hours")}</p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* =================================================

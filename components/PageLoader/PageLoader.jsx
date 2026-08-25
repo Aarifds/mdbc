@@ -13,7 +13,7 @@ export default function PageLoader() {
             alt="MANNAR DIGITAL BUSINESS COMPANY"
             width={180}
             height={180}
-            priority
+            loading="eager"
           />
         </div>
 

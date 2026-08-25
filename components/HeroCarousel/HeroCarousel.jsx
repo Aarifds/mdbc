@@ -43,6 +43,7 @@ export default function HeroCarousel() {
             fill
             priority={index === 0}
             className="hero-image"
+            sizes="(max-width: 767px) 94vw, (max-width: 1500px) 94vw, 1500px"
           />
 
           <div className="hero-overlay"></div>

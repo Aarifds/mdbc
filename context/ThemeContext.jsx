@@ -8,17 +8,10 @@ export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState("light");
   const [mounted, setMounted] = useState(false);
 
-  // Load theme after the app mounts
+  // Always start with light theme
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-
-    if (savedTheme === "light" || savedTheme === "dark") {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setTheme(savedTheme);
-    } else {
-      setTheme("light");
-    }
-
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setTheme("light");
     setMounted(true);
   }, []);
 
@@ -27,7 +20,6 @@ export function ThemeProvider({ children }) {
     if (!mounted) return;
 
     document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
   }, [theme, mounted]);
 
   const toggleTheme = () => {

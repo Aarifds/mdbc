@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import "./AboutPage.css";
 
 export default function AboutPage() {
   const t = useTranslations("AboutPage");
+  const locale = useLocale();
 
   return (
     <main className="about-page">
@@ -68,7 +69,9 @@ export default function AboutPage() {
           <div className="about-goals-list">
             {/* Customer Care */}
             <div className="about-goal-card">
-              <div className="about-goal-number">01</div>
+              <div className="about-goal-number">
+                {locale === "ar" ? "١" : "1"}
+              </div>
 
               <div className="about-goal-content">
                 <h3>{t("customerCare.title")}</h3>
@@ -79,7 +82,9 @@ export default function AboutPage() {
 
             {/* High Quality Products */}
             <div className="about-goal-card">
-              <div className="about-goal-number">02</div>
+              <div className="about-goal-number">
+                {locale === "ar" ? "٢" : "2"}
+              </div>
 
               <div className="about-goal-content">
                 <h3>{t("highQuality.title")}</h3>
@@ -90,7 +95,9 @@ export default function AboutPage() {
 
             {/* After Sales */}
             <div className="about-goal-card">
-              <div className="about-goal-number">03</div>
+              <div className="about-goal-number">
+                {locale === "ar" ? "٣" : "3"}
+              </div>
 
               <div className="about-goal-content">
                 <h3>{t("afterSales.title")}</h3>
