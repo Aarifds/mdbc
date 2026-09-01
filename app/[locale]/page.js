@@ -6,6 +6,7 @@ import HeroCarousel from "@/components/HeroCarousel/HeroCarousel";
 import About from "@/components/About/About";
 import HomeServices from "@/components/HomeServices/HomeServices";
 import Footer from "@/components/Footer/Footer";
+import TechnologySolutions from "@/components/TechnologySolutions/TechnologySolutions";
 
 export default function Home() {
   const { mounted } = useTheme();
@@ -21,6 +22,7 @@ export default function Home() {
         <HeroCarousel />
         <About />
         <HomeServices />
+        <TechnologySolutions />
       </main>
       <Footer />
     </>

@@ -92,6 +92,60 @@
     "viewAllDescription": "Explore all our technology solutions and services."
   },
 
+  "TechnologySolutions": {
+    "label": "Our Technology",
+    "title": "Technology Solutions Built for Modern Business",
+    "description": "From reliable infrastructure and secure connectivity to intelligent software and AI, MDBC brings together the technologies businesses need to operate, connect, and grow.",
+    "groups": {
+      "networking": {
+        "title": "Networking",
+        "items": {
+          "routers": "Routers",
+          "switches": "Switches",
+          "wireless": "Wireless"
+        }
+      },
+      "itInfrastructure": {
+        "title": "IT Infrastructure",
+        "items": {
+          "servers": "Servers",
+          "storageSystems": "Storage Systems",
+          "dataCenter": "Data Center"
+        }
+      },
+      "security": {
+        "title": "Security",
+        "items": {
+          "securitySystems": "Security Systems",
+          "networkSecurity": "Network Security",
+          "monitoring": "Monitoring"
+        }
+      },
+      "businessCommunication": {
+        "title": "Business Communication",
+        "items": {
+          "voip": "VoIP",
+          "voiceSolutions": "Voice Solutions",
+          "communication": "Communication"
+        }
+      },
+      "industrialMachinery": {
+        "title": "Industrial & Machinery",
+        "items": {
+          "industrialSoftware": "Industrial Software",
+          "machinerySoftware": "Machinery Software"
+        }
+      },
+      "aiIntelligentSolutions": {
+        "title": "AI & Intelligent Solutions",
+        "items": {
+          "artificialIntelligence": "Artificial Intelligence",
+          "smartAutomation": "Smart Automation"
+        }
+      }
+    }
+  },
+
   "AboutPage": {
     "badge": "ABOUT US",
     "title": "Building digital solutions that move businesses forward",
@@ -306,6 +360,7 @@
     "home": "Home",
     "about": "About Us",
     "services": "Services",
+    "industries": "Industries",
     "contact": "Contact",
     "contactUs": "Contact Us",
     "address": "Jeddah, Saudi Arabia",

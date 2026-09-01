@@ -91,6 +91,60 @@
     "viewAllDescription": "استكشف جميع حلولنا وخدماتنا التقنية."
   },
 
+  "TechnologySolutions": {
+    "label": "تقنياتنا",
+    "title": "حلول تقنية مصممة للأعمال الحديثة",
+    "description": "من البنية التحتية الموثوقة والاتصال الآمن إلى البرمجيات الذكية والذكاء الاصطناعي، تجمع MDBC التقنيات التي تحتاجها الشركات للتشغيل والاتصال والنمو.",
+    "groups": {
+      "networking": {
+        "title": "الشبكات",
+        "items": {
+          "routers": "أجهزة التوجيه",
+          "switches": "المبدلات",
+          "wireless": "الشبكات اللاسلكية"
+        }
+      },
+      "itInfrastructure": {
+        "title": "البنية التحتية لتقنية المعلومات",
+        "items": {
+          "servers": "الخوادم",
+          "storageSystems": "أنظمة التخزين",
+          "dataCenter": "مركز البيانات"
+        }
+      },
+      "security": {
+        "title": "الأمن والحماية",
+        "items": {
+          "securitySystems": "أنظمة الأمان",
+          "networkSecurity": "أمن الشبكات",
+          "monitoring": "المراقبة"
+        }
+      },
+      "businessCommunication": {
+        "title": "الاتصالات التجارية",
+        "items": {
+          "voip": "الاتصال عبر الإنترنت",
+          "voiceSolutions": "حلول الصوت",
+          "communication": "الاتصالات"
+        }
+      },
+      "industrialMachinery": {
+        "title": "البرمجيات الصناعية والآلات",
+        "items": {
+          "industrialSoftware": "البرمجيات الصناعية",
+          "machinerySoftware": "برمجيات الآلات"
+        }
+      },
+      "aiIntelligentSolutions": {
+        "title": "الذكاء الاصطناعي والحلول الذكية",
+        "items": {
+          "artificialIntelligence": "الذكاء الاصطناعي",
+          "smartAutomation": "الأتمتة الذكية"
+        }
+      }
+    }
+  },
+
   "AboutPage": {
     "badge": "من نحن",
     "title": "نبني حلولًا رقمية تدفع الأعمال إلى الأمام",
@@ -305,6 +359,7 @@
     "home": "الرئيسية",
     "about": "من نحن",
     "services": "الخدمات",
+    "industries": "الصناعات",
     "contact": "اتصل بنا",
     "contactUs": "اتصل بنا",
     "address": "جدة، المملكة العربية السعودية",

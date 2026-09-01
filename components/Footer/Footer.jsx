@@ -38,6 +38,7 @@ export default function Footer() {
             <Link href="/">{t("home")}</Link>
             <Link href="/about">{t("about")}</Link>
             <Link href="/services">{t("services")}</Link>
+            <Link href="/industries">{t("industries")}</Link>
             <Link href="/contact">{t("contact")}</Link>
           </div>
 
