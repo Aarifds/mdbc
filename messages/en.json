@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "industries": "Industries",
     "contact": "Contact"
   },
 
@@ -130,7 +131,34 @@
 
     "whyChooseLabel": "WHY CHOOSE US",
     "whyChooseTitle": "Why Choose MDBC",
-    "whyChooseDescription": "We combine quality products, reliable technology solutions, professional service, and customer-focused support to provide businesses with dependable technology solutions."
+    "whyChooseDescription": "We combine quality products, reliable technology solutions, professional service, and customer-focused support to provide businesses with dependable technology solutions.",
+
+    "whyChooseCards": {
+      "tailored": {
+        "title": "Tailored Solutions",
+        "description": "Solutions designed around your specific business requirements and goals."
+      },
+      "business": {
+        "title": "Business-Focused Technology",
+        "description": "Technology that solves real business challenges and improves operational efficiency."
+      },
+      "scalable": {
+        "title": "Scalable & Future-Ready",
+        "description": "Flexible solutions that evolve with your business as your needs grow."
+      },
+      "reliable": {
+        "title": "Reliable Delivery",
+        "description": "From planning to implementation and support, we focus on quality and consistency."
+      },
+      "customer": {
+        "title": "Customer-Centric Approach",
+        "description": "We work closely with our clients to understand their goals and deliver practical solutions."
+      },
+      "partnership": {
+        "title": "Long-Term Partnership",
+        "description": "We build lasting relationships and continue supporting your technology beyond project delivery."
+      }
+    }
   },
 
   "Services": {
@@ -196,6 +224,41 @@
         "name": "Artificial Intelligence",
         "description": "AI-powered solutions designed to help businesses automate processes, gain valuable insights, improve decision-making, and drive innovation."
       }
+    }
+  },
+
+  "Industries": {
+    "title": "Industries We Serve",
+    "description": "We provide technology solutions tailored to the unique needs of different industries.",
+
+    "manufacturing": {
+      "title": "Manufacturing",
+      "description": "Digital solutions that improve production, efficiency, and business operations."
+    },
+
+    "healthcare": {
+      "title": "Healthcare",
+      "description": "Technology solutions designed to enhance healthcare services and experiences."
+    },
+
+    "retail": {
+      "title": "Retail",
+      "description": "Modern digital solutions that help retailers connect with customers and grow."
+    },
+
+    "construction": {
+      "title": "Construction",
+      "description": "Smart technology solutions that simplify projects, processes, and operations."
+    },
+
+    "logistics": {
+      "title": "Logistics & Transportation",
+      "description": "Digital tools that improve logistics, transportation, tracking, and efficiency."
+    },
+
+    "professionalServices": {
+      "title": "Professional Services",
+      "description": "Scalable solutions that help professional service businesses work smarter."
     }
   },
 

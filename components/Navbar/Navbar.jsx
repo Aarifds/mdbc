@@ -68,14 +68,6 @@ export default function Navbar() {
               Desktop Navigation
           ===================================================== */}
 
-          {/* <ul className="navbar-links">
-            {navigation.map((item) => (
-              <li key={item.href}>
-                <Link href={`/${locale}${item.href}`}>{t(item.key)}</Link>
-              </li>
-            ))}
-          </ul> */}
-
           <ul className="navbar-links">
             {navigation.map((item) => {
               const currentPath = pathname.replace(`/${locale}`, "") || "/";

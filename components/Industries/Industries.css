@@ -1,0 +1,203 @@
+/* =====================================================
+   Industries
+===================================================== */
+
+.industries {
+  width: 100%;
+  padding: 80px 0;
+  background: var(--background);
+  color: var(--text);
+}
+
+.industries-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =====================================================
+   Section Heading
+===================================================== */
+
+.industries-heading {
+  max-width: 750px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.industries-heading h2 {
+  margin: 0 0 15px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.industries-heading p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* =====================================================
+   Industries List
+===================================================== */
+
+.industries-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* =====================================================
+   Industry Card
+===================================================== */
+
+.industry-card {
+  width: calc((100% - 50px) / 3);
+  padding: 35px 25px;
+  text-align: center;
+
+  background: var(--surface);
+  border: 1px solid #adadad74;
+  border-radius: 16px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* =====================================================
+   Icon
+===================================================== */
+
+.industry-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+  color: var(--surface);
+
+  font-size: 30px;
+
+  transition: transform 0.3s ease;
+}
+
+.industry-card:hover .industry-icon {
+  transform: scale(1.08);
+}
+
+/* =====================================================
+   Card Content
+===================================================== */
+
+.industry-card h3 {
+  margin: 0 0 12px;
+
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.4;
+
+  color: var(--text);
+}
+
+.industry-card p {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  color: var(--text-secondary);
+}
+
+/* =====================================================
+   RTL
+===================================================== */
+
+[dir="rtl"] .industries-heading,
+[dir="rtl"] .industry-card {
+  text-align: center;
+}
+
+/* =====================================================
+   Tablet
+===================================================== */
+
+@media (max-width: 992px) {
+  .industries {
+    padding: 70px 0;
+  }
+
+  .industries-heading h2 {
+    font-size: 36px;
+  }
+
+  .industry-card {
+    width: calc((100% - 25px) / 2);
+  }
+}
+
+/* =====================================================
+   Mobile
+===================================================== */
+
+@media (max-width: 600px) {
+  .industries {
+    padding: 55px 0;
+  }
+
+  .industries-container {
+    width: 90%;
+  }
+
+  .industries-heading {
+    margin-bottom: 35px;
+  }
+
+  .industries-heading h2 {
+    font-size: 30px;
+  }
+
+  .industries-heading p {
+    font-size: 15px;
+  }
+
+  .industries-list {
+    gap: 18px;
+  }
+
+  .industry-card {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .industry-icon {
+    width: 62px;
+    height: 62px;
+    margin-bottom: 18px;
+    font-size: 26px;
+  }
+
+  .industry-card h3 {
+    font-size: 19px;
+  }
+
+  .industry-card p {
+    font-size: 14px;
+  }
+}

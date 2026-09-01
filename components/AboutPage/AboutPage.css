@@ -74,7 +74,7 @@
 ===================================================== */
 
 .about-page-hero p {
-  max-width: 700px;
+  max-width: 800px;
 
   margin: 0;
 
@@ -397,7 +397,7 @@
 }
 
 /* =====================================================
-   Why Choose Us
+   Why Choose MDBC
 ===================================================== */
 
 .about-why-us {
@@ -407,12 +407,16 @@
 }
 
 .about-why-content {
-  max-width: auto;
+  width: 100%;
 
   margin: 0 auto;
 
   text-align: center;
 }
+
+/* =====================================================
+   Why Choose Heading
+===================================================== */
 
 .about-why-heading {
   display: flex;
@@ -421,7 +425,7 @@
 
   align-items: center;
 
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .about-why-heading span {
@@ -448,7 +452,7 @@
 }
 
 .about-why-heading h2 {
-  margin: 0;
+  margin: 0 0 20px;
 
   font-size: clamp(34px, 4vw, 52px);
 
@@ -459,7 +463,9 @@
   color: var(--text);
 }
 
-.about-why-content > p {
+.about-why-heading p {
+  max-width: 1000px;
+
   margin: 0;
 
   font-size: 18px;
@@ -469,8 +475,149 @@
   color: var(--text-light);
 }
 
-[dir="rtl"] .about-why-content > p {
+[dir="rtl"] .about-why-heading p {
   font-size: 25px;
+}
+
+/* =====================================================
+   Why Choose Cards
+===================================================== */
+
+.about-why-cards {
+  width: 100%;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 25px;
+}
+
+/* =====================================================
+   Why Choose Card
+===================================================== */
+
+.about-why-card {
+  position: relative;
+
+  flex: 0 0 calc((100% - 50px) / 3);
+
+  box-sizing: border-box;
+
+  padding: 32px;
+
+  background: var(--surface);
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(15, 23, 42, 0.08);
+
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+
+  text-align: left;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.about-why-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.1);
+}
+
+/* =====================================================
+   Card Number
+===================================================== */
+
+.about-why-number {
+  position: absolute;
+
+  top: 20px;
+
+  inset-inline-end: 24px;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  color: var(--primary);
+
+  opacity: 0.5;
+}
+
+[dir="rtl"] .about-why-number {
+  font-size: 25px;
+}
+
+/* =====================================================
+   Card Icon
+===================================================== */
+
+.about-why-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 14px;
+
+  background: rgba(0, 87, 217, 0.1);
+
+  color: var(--primary);
+
+  font-size: 27px;
+}
+
+/* =====================================================
+   Card Content
+===================================================== */
+
+.about-why-card-content {
+  width: 100%;
+}
+
+.about-why-card-content h3 {
+  margin: 0 0 12px;
+
+  font-size: 23px;
+
+  line-height: 1.35;
+
+  font-weight: 700;
+
+  color: var(--text);
+}
+
+.about-why-card-content p {
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: var(--text-light);
+}
+
+/* =====================================================
+   RTL
+===================================================== */
+
+[dir="rtl"] .about-why-card {
+  direction: rtl;
+
+  text-align: right;
+}
+
+[dir="rtl"] .about-why-card-content {
+  text-align: right;
 }
 
 /* =====================================================
@@ -633,10 +780,34 @@
     width: 100%;
   }
 
-  /*  Why Us  */
+  /* =====================================================
+   Why Choose MDBC
+===================================================== */
 
   .about-why-us {
     padding: 75px 0;
+  }
+
+  .about-why-heading {
+    margin-bottom: 40px;
+  }
+
+  .about-why-cards {
+    gap: 25px;
+  }
+
+  .about-why-card {
+    flex: 0 0 calc((100% - 25px) / 2);
+
+    padding: 28px;
+  }
+
+  .about-why-card-content h3 {
+    font-size: 21px;
+  }
+
+  .about-why-card-content p {
+    font-size: 16px;
   }
 }
 
@@ -758,10 +929,16 @@
     line-height: 1.8;
   }
 
-  /* Why Us */
+  /* =====================================================
+   Why Choose MDBC
+===================================================== */
 
   .about-why-us {
     padding: 60px 0;
+  }
+
+  .about-why-heading {
+    margin-bottom: 35px;
   }
 
   .about-why-heading span {
@@ -772,10 +949,55 @@
 
   .about-why-heading h2 {
     font-size: 32px;
+
+    margin-bottom: 16px;
   }
 
-  .about-why-content > p {
+  .about-why-heading p {
     font-size: 16px;
+
+    line-height: 1.8;
+  }
+
+  .about-why-cards {
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .about-why-card {
+    flex: 0 0 100%;
+
+    width: 100%;
+
+    padding: 25px 22px;
+
+    border-radius: 18px;
+  }
+
+  .about-why-number {
+    top: 18px;
+
+    inset-inline-end: 20px;
+  }
+
+  .about-why-icon {
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 18px;
+
+    font-size: 23px;
+  }
+
+  .about-why-card-content h3 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+  }
+
+  .about-why-card-content p {
+    font-size: 15px;
 
     line-height: 1.8;
   }

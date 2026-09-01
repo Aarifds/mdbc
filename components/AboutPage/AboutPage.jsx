@@ -2,6 +2,14 @@
 
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
+import {
+  FiTarget,
+  FiCpu,
+  FiTrendingUp,
+  FiCheckCircle,
+  FiUsers,
+  FiLink,
+} from "react-icons/fi";
 import "./AboutPage.css";
 
 export default function AboutPage() {
@@ -157,12 +165,108 @@ export default function AboutPage() {
         <div className="container">
           <div className="about-why-content">
             <div className="about-why-heading">
-              {/* <span>{t("whyChooseLabel")}</span> */}
-
               <h2>{t("whyChooseTitle")}</h2>
+
+              <p>{t("whyChooseDescription")}</p>
             </div>
 
-            <p>{t("whyChooseDescription")}</p>
+            <div className="about-why-cards">
+              {/* Card 01 */}
+              <div className="about-why-card">
+                <span className="about-why-number">
+                  {locale === "ar" ? "٠١" : "01"}
+                </span>
+
+                <div className="about-why-icon">
+                  <FiTarget />
+                </div>
+
+                <div className="about-why-card-content">
+                  <h3>{t("whyChooseCards.tailored.title")}</h3>
+                  <p>{t("whyChooseCards.tailored.description")}</p>
+                </div>
+              </div>
+
+              {/* Card 02 */}
+              <div className="about-why-card">
+                <span className="about-why-number">
+                  {locale === "ar" ? "٠٢" : "02"}
+                </span>
+
+                <div className="about-why-icon">
+                  <FiCpu />
+                </div>
+
+                <div className="about-why-card-content">
+                  <h3>{t("whyChooseCards.business.title")}</h3>
+                  <p>{t("whyChooseCards.business.description")}</p>
+                </div>
+              </div>
+
+              {/* Card 03 */}
+              <div className="about-why-card">
+                <span className="about-why-number">
+                  {locale === "ar" ? "٠٣" : "03"}
+                </span>
+
+                <div className="about-why-icon">
+                  <FiTrendingUp />
+                </div>
+
+                <div className="about-why-card-content">
+                  <h3>{t("whyChooseCards.scalable.title")}</h3>
+                  <p>{t("whyChooseCards.scalable.description")}</p>
+                </div>
+              </div>
+
+              {/* Card 04 */}
+              <div className="about-why-card">
+                <span className="about-why-number">
+                  {locale === "ar" ? "٠٤" : "04"}
+                </span>
+
+                <div className="about-why-icon">
+                  <FiCheckCircle />
+                </div>
+
+                <div className="about-why-card-content">
+                  <h3>{t("whyChooseCards.reliable.title")}</h3>
+                  <p>{t("whyChooseCards.reliable.description")}</p>
+                </div>
+              </div>
+
+              {/* Card 05 */}
+              <div className="about-why-card">
+                <span className="about-why-number">
+                  {locale === "ar" ? "٠٥" : "05"}
+                </span>
+
+                <div className="about-why-icon">
+                  <FiUsers />
+                </div>
+
+                <div className="about-why-card-content">
+                  <h3>{t("whyChooseCards.customer.title")}</h3>
+                  <p>{t("whyChooseCards.customer.description")}</p>
+                </div>
+              </div>
+
+              {/* Card 06 */}
+              <div className="about-why-card">
+                <span className="about-why-number">
+                  {locale === "ar" ? "٠٦" : "06"}
+                </span>
+
+                <div className="about-why-icon">
+                  <FiLink />
+                </div>
+
+                <div className="about-why-card-content">
+                  <h3>{t("whyChooseCards.partnership.title")}</h3>
+                  <p>{t("whyChooseCards.partnership.description")}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
