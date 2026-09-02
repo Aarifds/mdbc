@@ -7,6 +7,7 @@ import About from "@/components/About/About";
 import HomeServices from "@/components/HomeServices/HomeServices";
 import Footer from "@/components/Footer/Footer";
 import TechnologySolutions from "@/components/TechnologySolutions/TechnologySolutions";
+import HowWeWork from "@/components/HowWeWork/HowWeWork";
 
 export default function Home() {
   const { mounted } = useTheme();
@@ -23,6 +24,7 @@ export default function Home() {
         <About />
         <HomeServices />
         <TechnologySolutions />
+        <HowWeWork />
       </main>
       <Footer />
     </>

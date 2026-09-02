@@ -146,6 +146,30 @@
     }
   },
 
+  "HowWeWork": {
+    "label": "How We Work",
+    "title": "Simple Approach to Delivering Better Solutions",
+    "description": "We follow a structured approach to understand your needs, deliver the right solution, and support you after implementation.",
+    "steps": {
+      "understand": {
+        "title": "Understand",
+        "description": "We understand your business, requirements, challenges, and objectives."
+      },
+      "plan": {
+        "title": "Plan",
+        "description": "We develop the right technology strategy and solution based on your needs."
+      },
+      "implement": {
+        "title": "Implement",
+        "description": "We deploy, configure, and integrate the selected technology solutions."
+      },
+      "support": {
+        "title": "Support",
+        "description": "We provide ongoing technical support, maintenance, and optimization."
+      }
+    }
+  },
+
   "AboutPage": {
     "badge": "ABOUT US",
     "title": "Building digital solutions that move businesses forward",
@@ -181,6 +205,35 @@
     "afterSales": {
       "title": "After Sales",
       "description": "Supporting our customers beyond the initial purchase through dependable after-sales service, assistance, and ongoing technical support."
+    },
+
+    "coreValuesTitle": "Our Core Values",
+    "coreValuesDescription": "Our values shape the way we work, the solutions we deliver, and the relationships we build with our clients and partners.",
+    "coreValues": {
+      "integrity": {
+        "title": "Integrity",
+        "description": "We conduct our business with honesty, transparency, and professionalism."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We embrace new technologies and develop smarter solutions for modern business needs."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We are committed to delivering high-quality solutions and maintaining strong standards."
+      },
+      "customerFocus": {
+        "title": "Customer Focus",
+        "description": "We understand our clients' needs and work to deliver solutions that create real value."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "We provide dependable technology solutions and consistent support our clients can trust."
+      },
+      "continuousGrowth": {
+        "title": "Continuous Growth",
+        "description": "We continuously improve our knowledge, capabilities, and solutions as technology evolves."
+      }
     },
 
     "whyChooseLabel": "WHY CHOOSE US",

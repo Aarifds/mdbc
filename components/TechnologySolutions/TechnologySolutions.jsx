@@ -1,5 +1,4 @@
 "use client";
-
 import {
   Network,
   Router,
@@ -18,11 +17,8 @@ import {
   Bot,
   Sparkles,
 } from "lucide-react";
-
 import { useTranslations } from "next-intl";
-
 import "./TechnologySolutions.css";
-
 const technologyGroups = [
   {
     key: "networking",
@@ -32,7 +28,6 @@ const technologyGroups = [
       { key: "wireless", icon: Wifi },
     ],
   },
-
   {
     key: "itInfrastructure",
     items: [
@@ -41,7 +36,6 @@ const technologyGroups = [
       { key: "dataCenter", icon: HardDrive },
     ],
   },
-
   {
     key: "security",
     items: [
@@ -50,7 +44,6 @@ const technologyGroups = [
       { key: "monitoring", icon: Eye },
     ],
   },
-
   {
     key: "businessCommunication",
     items: [
@@ -59,7 +52,6 @@ const technologyGroups = [
       { key: "communication", icon: MessageSquare },
     ],
   },
-
   {
     key: "industrialMachinery",
     items: [
@@ -67,7 +59,6 @@ const technologyGroups = [
       { key: "machinerySoftware", icon: Cog },
     ],
   },
-
   {
     key: "aiIntelligentSolutions",
     items: [
@@ -76,47 +67,56 @@ const technologyGroups = [
     ],
   },
 ];
-
 export default function TechnologySolutions() {
   const t = useTranslations("TechnologySolutions");
-
   return (
     <section className="technology-solutions">
+      {" "}
       <div className="technology-solutions-container">
-        {/* Section Heading */}
+        {" "}
+        {/* Section Header */}{" "}
         <div className="technology-solutions-heading">
-          <span className="technology-solutions-label">{t("label")}</span>
-
-          <h2>{t("title")}</h2>
-
-          <p>{t("description")}</p>
-        </div>
-
-        {/* Technology Groups */}
+          {" "}
+          <span className="technology-solutions-label">
+            {" "}
+            {t("label")}{" "}
+          </span>{" "}
+          <h2>{t("title")}</h2> <p>{t("description")}</p>{" "}
+        </div>{" "}
+        {/* Technology Groups */}{" "}
         <div className="technology-solutions-groups">
+          {" "}
           {technologyGroups.map((group) => (
             <div className="technology-solutions-group" key={group.key}>
-              <h3>{t(`groups.${group.key}.title`)}</h3>
-
+              {" "}
+              <div className="technology-group-title">
+                {" "}
+                <span></span> <h3>{t(`groups.${group.key}.title`)}</h3>{" "}
+                <span></span>{" "}
+              </div>{" "}
               <div className="technology-solutions-items">
+                {" "}
                 {group.items.map((item) => {
                   const Icon = item.icon;
-
                   return (
                     <div className="technology-solution-item" key={item.key}>
+                      {" "}
                       <div className="technology-solution-icon">
-                        <Icon size={34} strokeWidth={1.7} />
-                      </div>
-
-                      <span>{t(`groups.${group.key}.items.${item.key}`)}</span>
+                        {" "}
+                        <Icon size={42} strokeWidth={1.6} />{" "}
+                      </div>{" "}
+                      <span>
+                        {" "}
+                        {t(`groups.${group.key}.items.${item.key}`)}{" "}
+                      </span>{" "}
                     </div>
                   );
-                })}
-              </div>
+                })}{" "}
+              </div>{" "}
             </div>
-          ))}
-        </div>
-      </div>
+          ))}{" "}
+        </div>{" "}
+      </div>{" "}
     </section>
   );
 }

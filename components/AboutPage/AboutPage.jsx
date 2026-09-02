@@ -9,6 +9,11 @@ import {
   FiCheckCircle,
   FiUsers,
   FiLink,
+  FiShield,
+  FiZap,
+  FiAward,
+  FiHeart,
+  FiCheck,
 } from "react-icons/fi";
 import "./AboutPage.css";
 
@@ -158,10 +163,97 @@ export default function AboutPage() {
       </section>
 
       {/* =====================================================
+            Core Values
+      ===================================================== */}
+
+      <section className="about-core-values about-section-alt">
+        <div className="container">
+          <div className="about-section-heading">
+            <h2>{t("coreValuesTitle")}</h2>
+            <p>{t("coreValuesDescription")}</p>
+          </div>
+
+          <div className="about-core-values-list">
+            {/* Integrity */}
+            <div className="about-core-value-card">
+              <div className="about-core-value-icon">
+                <FiShield />
+              </div>
+
+              <div className="about-core-value-content">
+                <h3>{t("coreValues.integrity.title")}</h3>
+                <p>{t("coreValues.integrity.description")}</p>
+              </div>
+            </div>
+
+            {/* Innovation */}
+            <div className="about-core-value-card">
+              <div className="about-core-value-icon">
+                <FiZap />
+              </div>
+
+              <div className="about-core-value-content">
+                <h3>{t("coreValues.innovation.title")}</h3>
+                <p>{t("coreValues.innovation.description")}</p>
+              </div>
+            </div>
+
+            {/* Excellence */}
+            <div className="about-core-value-card">
+              <div className="about-core-value-icon">
+                <FiAward />
+              </div>
+
+              <div className="about-core-value-content">
+                <h3>{t("coreValues.excellence.title")}</h3>
+                <p>{t("coreValues.excellence.description")}</p>
+              </div>
+            </div>
+
+            {/* Customer Focus */}
+            <div className="about-core-value-card">
+              <div className="about-core-value-icon">
+                <FiHeart />
+              </div>
+
+              <div className="about-core-value-content">
+                <h3>{t("coreValues.customerFocus.title")}</h3>
+                <p>{t("coreValues.customerFocus.description")}</p>
+              </div>
+            </div>
+
+            {/* Reliability */}
+            <div className="about-core-value-card">
+              <div className="about-core-value-icon">
+                <FiCheck />
+              </div>
+
+              <div className="about-core-value-content">
+                <h3>{t("coreValues.reliability.title")}</h3>
+                <p>{t("coreValues.reliability.description")}</p>
+              </div>
+            </div>
+
+            {/* Continuous Growth */}
+            <div className="about-core-value-card">
+              <div className="about-core-value-icon">
+                <FiTrendingUp />
+              </div>
+
+              <div className="about-core-value-content">
+                <h3>{t("coreValues.continuousGrowth.title")}</h3>
+                <p>{t("coreValues.continuousGrowth.description")}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =====================================================
           Why Choose Us
       ===================================================== */}
 
-      <section className="about-why-us about-section-alt">
+      <section className="about-why-us">
         <div className="container">
           <div className="about-why-content">
             <div className="about-why-heading">

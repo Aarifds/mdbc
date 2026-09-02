@@ -1,17 +1,19 @@
 /* =====================================================
-   Technology Solutions
+   How We Work
 ===================================================== */
 
-.technology-solutions {
+.how-we-work {
   width: 100%;
   padding: 100px 0;
-  background: var(--surface);
+
+  background: var(--background);
   color: var(--text);
 }
 
-.technology-solutions-container {
+.how-we-work-container {
   width: 90%;
   max-width: 1400px;
+
   margin: 0 auto;
 }
 
@@ -19,36 +21,43 @@
    Section Header
 ===================================================== */
 
-.technology-solutions-heading {
+.how-we-work-heading {
   max-width: 1000px;
+
   margin: 0 auto 75px;
+
   text-align: center;
 }
 
-.technology-solutions-label {
+.how-we-work-label {
   display: inline-block;
+
   margin-bottom: 14px;
 
   color: var(--primary);
 
   font-size: 35px;
   font-weight: 700;
+
   letter-spacing: 2px;
+
   text-transform: uppercase;
 }
 
-.technology-solutions-heading h2 {
+.how-we-work-heading h2 {
   margin: 0 0 20px;
 
   color: var(--text);
 
   font-size: 42px;
   line-height: 1.2;
+
   font-weight: 700;
 }
 
-.technology-solutions-heading p {
-  max-width: 720px;
+.how-we-work-heading p {
+  max-width: 1000px;
+
   margin: 0 auto;
 
   color: var(--text-light);
@@ -58,96 +67,92 @@
 }
 
 /* =====================================================
-   Technology Groups
+   Process
 ===================================================== */
 
-.technology-solutions-groups {
+.how-we-work-process {
   display: flex;
-  flex-direction: column;
-  gap: 65px;
-}
 
-.technology-solutions-group {
+  align-items: flex-start;
+  justify-content: space-between;
+
+  position: relative;
+
   width: 100%;
 }
 
 /* =====================================================
-   Group Title
+   Step
 ===================================================== */
 
-.technology-group-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.how-we-work-step {
+  position: relative;
 
-  gap: 18px;
-
-  margin-bottom: 35px;
-}
-
-.technology-group-title span {
-  width: 55px;
-  height: 1px;
-
-  background: var(--primary);
-
-  opacity: 0.45;
-}
-
-.technology-group-title h3 {
-  margin: 0;
-
-  color: var(--text);
-
-  font-size: 23px;
-  font-weight: 600;
-
-  white-space: nowrap;
-}
-
-/* =====================================================
-   Technology Items
-===================================================== */
-
-.technology-solutions-items {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-
-  gap: 55px;
-}
-
-/* =====================================================
-   Individual Technology
-===================================================== */
-
-.technology-solution-item {
-  width: 150px;
+  width: 25%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
 
   text-align: center;
+}
 
-  cursor: pointer;
+/* =====================================================
+   Icon Wrapper
+===================================================== */
+
+.how-we-work-icon-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100px;
+  height: 100px;
+
+  margin-bottom: 28px;
+}
+
+/* =====================================================
+   Number
+===================================================== */
+
+.how-we-work-number {
+  position: absolute;
+
+  top: -8px;
+  right: -8px;
+
+  z-index: 3;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
 }
 
 /* =====================================================
    Icon
 ===================================================== */
 
-.technology-solution-icon {
+.how-we-work-icon {
   width: 82px;
   height: 82px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin-bottom: 18px;
 
   border-radius: 50%;
 
@@ -163,35 +168,45 @@
 }
 
 /* =====================================================
-   Technology Name
+   Content
 ===================================================== */
 
-.technology-solution-item span {
+.how-we-work-content {
+  max-width: 230px;
+}
+
+.how-we-work-content h3 {
+  margin: 0 0 12px;
+
   color: var(--text);
 
-  font-size: 15px;
+  font-size: 21px;
   font-weight: 600;
+}
 
-  line-height: 1.4;
+.how-we-work-content p {
+  margin: 0;
 
-  transition: color 0.3s ease;
+  color: var(--text-light);
+
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 /* =====================================================
    Hover
 ===================================================== */
 
-.technology-solution-item:hover .technology-solution-icon {
+.how-we-work-step:hover .how-we-work-icon {
   transform: translateY(-7px) scale(1.06);
 
   background: var(--primary);
-
   color: #ffffff;
 
-  box-shadow: 0 12px 28px rgba(0, 87, 217, 0.22);
+  box-shadow: 0 12px 28px rgba(0, 87, 217, 0.2);
 }
 
-.technology-solution-item:hover span {
+.how-we-work-step:hover .how-we-work-content h3 {
   color: var(--primary);
 }
 
@@ -199,13 +214,11 @@
    Dark Theme
 ===================================================== */
 
-[data-theme="dark"] .technology-solution-icon {
+[data-theme="dark"] .how-we-work-icon {
   background: rgba(79, 140, 255, 0.12);
 }
 
-[data-theme="dark"] .technology-solution-item:hover .technology-solution-icon {
-  background: var(--primary);
-
+[data-theme="dark"] .how-we-work-step:hover .how-we-work-icon {
   box-shadow: 0 12px 28px rgba(79, 140, 255, 0.2);
 }
 
@@ -213,20 +226,17 @@
    RTL
 ===================================================== */
 
-[dir="rtl"] .technology-solutions-heading {
+[dir="rtl"] .how-we-work-heading {
   text-align: center;
 }
 
-[dir="rtl"] .technology-group-title h3 {
+[dir="rtl"] .how-we-work-content {
   text-align: center;
 }
 
-[dir="rtl"] .technology-solutions-items {
-  direction: rtl;
-}
-
-[dir="rtl"] .technology-solutions-label {
-  letter-spacing: 0;
+[dir="rtl"] .how-we-work-number {
+  right: auto;
+  left: -8px;
 }
 
 /* =====================================================
@@ -234,24 +244,26 @@
 ===================================================== */
 
 @media (max-width: 992px) {
-  .technology-solutions {
+  .how-we-work {
     padding: 80px 0;
   }
 
-  .technology-solutions-heading {
+  .how-we-work-heading {
     margin-bottom: 60px;
   }
 
-  .technology-solutions-heading h2 {
+  .how-we-work-heading h2 {
     font-size: 36px;
   }
 
-  .technology-solutions-items {
-    gap: 45px;
+  .how-we-work-process {
+    flex-wrap: wrap;
+
+    gap: 50px 0;
   }
 
-  .technology-solution-item {
-    width: 135px;
+  .how-we-work-step {
+    width: 50%;
   }
 }
 
@@ -260,83 +272,68 @@
 ===================================================== */
 
 @media (max-width: 600px) {
-  .technology-solutions {
+  .how-we-work {
     padding: 65px 0;
   }
 
-  .technology-solutions-container {
+  .how-we-work-container {
     width: 92%;
   }
 
-  .technology-solutions-heading {
+  .how-we-work-heading {
     margin-bottom: 50px;
   }
 
-  .technology-solutions-label {
+  .how-we-work-label {
     font-size: 12px;
   }
 
-  .technology-solutions-heading h2 {
+  .how-we-work-heading h2 {
     font-size: 30px;
   }
 
-  .technology-solutions-heading p {
+  .how-we-work-heading p {
     font-size: 15px;
     line-height: 1.65;
   }
 
-  .technology-solutions-groups {
-    gap: 50px;
+  .how-we-work-process {
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 45px;
   }
 
-  .technology-group-title {
-    gap: 12px;
-    margin-bottom: 30px;
+  .how-we-work-step {
+    width: 100%;
   }
 
-  .technology-group-title span {
-    width: 30px;
+  .how-we-work-icon-wrapper {
+    margin-bottom: 20px;
   }
 
-  .technology-group-title h3 {
+  .how-we-work-icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  .how-we-work-content {
+    max-width: 300px;
+  }
+
+  .how-we-work-content h3 {
     font-size: 20px;
   }
 
-  .technology-solutions-items {
-    gap: 35px 20px;
+  .how-we-work-content p {
+    font-size: 14px;
   }
 
-  .technology-solution-item {
-    width: calc(33.333% - 14px);
-    min-width: 90px;
-  }
+  .how-we-work-number {
+    width: 27px;
+    height: 27px;
 
-  .technology-solution-icon {
-    width: 65px;
-    height: 65px;
-    margin-bottom: 13px;
-  }
-
-  .technology-solution-icon svg {
-    width: 32px;
-    height: 32px;
-  }
-
-  .technology-solution-item span {
-    font-size: 13px;
-  }
-}
-
-/* =====================================================
-   Small Mobile
-===================================================== */
-
-@media (max-width: 400px) {
-  .technology-solution-item {
-    width: calc(50% - 10px);
-  }
-
-  .technology-solutions-items {
-    gap: 30px 10px;
+    font-size: 10px;
   }
 }

@@ -367,7 +367,7 @@
 
   color: #fff;
 
-  font-size: 35px;
+  font-size: 30px;
 
   font-weight: 700;
 }
@@ -379,7 +379,7 @@
 .about-goal-content h3 {
   margin: 0 0 10px;
 
-  font-size: 30px;
+  font-size: 27px;
 
   font-weight: 700;
 
@@ -389,11 +389,173 @@
 .about-goal-content p {
   margin: 0;
 
-  font-size: 23px;
+  font-size: 17px;
 
   line-height: 1.8;
 
   color: var(--text-light);
+}
+
+[dir="rtl"] .about-goal-content p {
+  font-size: 25px;
+}
+
+/* =====================================================
+   Core Values
+===================================================== */
+
+.about-core-values {
+  width: 100%;
+  padding: 90px 0;
+}
+
+.about-core-values .about-section-heading {
+  max-width: 950px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.about-core-values .about-section-heading p {
+  max-width: 900px;
+  margin: 15px auto 0;
+
+  color: var(--text-light);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   Core Values Cards
+===================================================== */
+
+.about-core-values-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.about-core-value-card {
+  width: calc(33.333% - 16px);
+
+  padding: 28px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  background: var(--surface);
+
+  border-radius: 14px;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+
+  transition: transform 0.25s ease;
+}
+
+.about-core-value-card:hover {
+  transform: translateY(-4px);
+}
+
+/* =====================================================
+   Icon
+===================================================== */
+
+.about-core-value-icon {
+  width: 64px;
+  height: 64px;
+
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e6e6ff;
+  color: var(--primary);
+
+  font-size: 30px;
+
+  flex-shrink: 0;
+}
+
+/* =====================================================
+   Content
+===================================================== */
+
+.about-core-value-content h3 {
+  margin: 0 0 8px;
+
+  color: var(--text);
+
+  font-size: 19px;
+  font-weight: 650;
+}
+
+.about-core-value-content p {
+  max-width: 280px;
+
+  margin: 0;
+
+  color: var(--text-light);
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   Dark Theme
+===================================================== */
+
+[data-theme="dark"] .about-core-value-card {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* =====================================================
+   RTL
+===================================================== */
+
+[dir="rtl"] .about-core-value-card {
+  direction: rtl;
+}
+
+/* =====================================================
+   Tablet
+===================================================== */
+
+@media (max-width: 900px) {
+  .about-core-value-card {
+    width: calc(50% - 12px);
+  }
+}
+
+/* =====================================================
+   Mobile
+===================================================== */
+
+@media (max-width: 600px) {
+  .about-core-values {
+    padding: 65px 0;
+  }
+
+  .about-core-values-list {
+    gap: 18px;
+  }
+
+  .about-core-value-card {
+    width: 100%;
+    padding: 24px 20px;
+  }
+
+  .about-core-value-icon {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 15px;
+  }
 }
 
 /* =====================================================
@@ -670,10 +832,6 @@
     text-align: center;
   }
 
-  /*
-     Allow the children inside the text wrapper
-     to participate in the main flex order.
-  */
   .about-overview-text {
     display: contents;
   }
