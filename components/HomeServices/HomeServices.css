@@ -13,46 +13,32 @@
 
 .home-services-heading {
   max-width: 800px;
-
   margin: 0 auto 45px;
-
   text-align: center;
 }
 
 .home-services-label {
   display: inline-block;
-
   margin-bottom: 12px;
-
   color: var(--primary);
-
   font-size: 35px;
   font-weight: 700;
-
   letter-spacing: 1px;
-
   text-transform: uppercase;
 }
 
 .home-services-heading h2 {
   margin: 0 0 15px;
-
   color: var(--text);
-
   font-size: clamp(32px, 3vw, 40px);
-
   line-height: 1.2;
 }
 
 .home-services-heading p {
   max-width: 700px;
-
   margin: 0 auto;
-
   color: var(--text-light);
-
   font-size: 17px;
-
   line-height: 1.7;
 }
 
@@ -74,15 +60,11 @@
   display: flex;
   gap: 24px;
   width: 100%;
-
   overflow-x: auto;
-
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-
   padding: 20px 20px 30px;
-
   box-sizing: border-box;
 }
 
@@ -96,23 +78,14 @@
 
 .home-service-card {
   position: relative;
-
   flex: 0 0 calc((100% - 48px) / 3);
-
   min-width: 0;
-
   overflow: hidden;
-
   scroll-snap-align: start;
-
   background: var(--surface);
-
   border: 1px solid rgba(128, 128, 128, 0.15);
-
   border-radius: 18px;
-
   text-decoration: none;
-
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -120,19 +93,12 @@
 
 .home-service-card::before {
   content: "";
-
   position: absolute;
-
   inset: 0;
-
   z-index: 20;
-
   border: 1.7px solid transparent;
-
   border-radius: inherit;
-
   pointer-events: none;
-
   transition: border-color 0.3s ease;
 }
 
@@ -142,7 +108,6 @@
 
 .home-service-card:hover {
   transform: translateY(-6px);
-
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.14);
 }
 
@@ -156,19 +121,30 @@
   height: 210px;
   overflow: hidden;
   background: #f1f5f9;
+
+  /* Keep image centered */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-service-image img {
+  display: block;
   width: 100%;
   height: 100%;
 
-  object-fit: cover;
+  /*
+    contain keeps the COMPLETE image visible.
+    No important part of the image will be cropped.
+  */
+  object-fit: contain;
+  object-position: center;
 
   transition: transform 0.5s ease;
 }
 
 .home-service-card:hover .home-service-image img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 /* =====================================================
@@ -177,43 +153,28 @@
 
 .home-service-content {
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   justify-content: center;
-
   min-height: 150px;
-
   padding: 22px 20px 25px;
-
   text-align: center;
 }
 
 .home-service-content h3 {
   margin: 0 0 10px;
-
   color: var(--text);
-
   font-size: 21px;
-
   font-weight: 700;
-
   line-height: 1.3;
 }
 
 .home-service-content p {
   max-width: 300px;
-
   margin: 0;
-
   color: var(--text-light);
-
   font-size: 15px;
-
   line-height: 1.6;
-
   text-align: center;
 }
 
@@ -223,54 +184,34 @@
 
 .home-service-view-all {
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   justify-content: center;
-
   min-height: 360px;
-
   padding: 35px;
-
   text-align: center;
-
-  /* background: var(--primary); */
   background: var(--primary);
-
   border-color: var(--primary);
-
   color: #ffffff;
 }
 
 .home-service-view-all:hover {
   background: var(--primary);
-
   border-color: var(--primary);
-
   transform: translateY(-6px);
 }
 
 .view-all-icon {
   width: 60px;
   height: 60px;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   margin-bottom: 20px;
-
   border-radius: 50%;
-
   background: rgba(255, 255, 255, 0.15);
-
   color: #ffffff;
-
   font-size: 28px;
-
   transition: transform 0.3s ease;
 }
 
@@ -280,23 +221,16 @@
 
 .home-service-view-all h3 {
   margin: 0 0 12px;
-
   color: #ffffff;
-
   font-size: 24px;
-
   font-weight: 700;
 }
 
 .home-service-view-all p {
   max-width: 250px;
-
   margin: 0;
-
   color: rgba(255, 255, 255, 0.85);
-
   font-size: 15px;
-
   line-height: 1.6;
 }
 
@@ -306,35 +240,21 @@
 
 .home-services-arrow {
   position: absolute;
-
   top: 50%;
-
   z-index: 10;
-
   width: 46px;
   height: 46px;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   border: 1px solid rgba(128, 128, 128, 0.18);
-
   border-radius: 50%;
-
   background: var(--surface);
-
   color: var(--text);
-
   font-size: 24px;
-
   cursor: pointer;
-
   box-shadow: 0 6px 20px rgba(15, 23, 42, 0.15);
-
   transform: translateY(-50%);
-
   transition:
     background 0.3s ease,
     color 0.3s ease,
@@ -344,11 +264,8 @@
 
 .home-services-arrow:hover {
   background: var(--primary);
-
   color: #ffffff;
-
   transform: translateY(-50%) scale(1.05);
-
   box-shadow: 0 8px 25px rgba(0, 87, 217, 0.25);
 }
 
@@ -366,13 +283,11 @@
 
 [data-theme="dark"] .home-service-card {
   border-color: rgba(255, 255, 255, 0.08);
-
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 [data-theme="dark"] .home-service-card:hover {
   border-color: var(--primary);
-
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
@@ -401,12 +316,16 @@
     flex: 0 0 calc((100% - 24px) / 2);
   }
 
+  /*
+    Slightly reduce image height while keeping
+    the complete image visible.
+  */
   .home-service-image {
-    height: 210px;
+    height: 200px;
   }
 
   .home-service-view-all {
-    min-height: 360px;
+    min-height: 350px;
   }
 
   .home-services-slider-wrapper {
@@ -433,7 +352,6 @@
 
   .home-services-heading {
     margin-bottom: 30px;
-
     padding: 0 15px;
   }
 
@@ -447,30 +365,38 @@
 
   .home-services-heading p {
     font-size: 15px;
-
     line-height: 1.6;
   }
 
   .home-services-slider {
     gap: 16px;
-
     padding-left: 15px;
     padding-right: 15px;
   }
 
   .home-service-card {
     flex: 0 0 82%;
-
     border-radius: 16px;
   }
 
+  /*
+    Responsive image area for mobile.
+    The image itself is NOT cropped.
+  */
   .home-service-image {
-    height: 210px;
+    height: auto;
+    min-height: 190px;
+    aspect-ratio: 16 / 10;
+  }
+
+  .home-service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .home-service-content {
     min-height: 145px;
-
     padding: 20px 18px 25px;
   }
 
@@ -484,7 +410,6 @@
 
   .home-service-view-all {
     min-height: 355px;
-
     padding: 30px 20px;
   }
 
@@ -499,14 +424,12 @@
   .view-all-icon {
     width: 52px;
     height: 52px;
-
     font-size: 24px;
   }
 
   .home-services-arrow {
     width: 40px;
     height: 40px;
-
     font-size: 21px;
   }
 
@@ -520,6 +443,34 @@
 
   .home-services-arrow-right {
     right: 0;
+  }
+}
+
+/* =====================================================
+   Small Mobile
+===================================================== */
+
+@media (max-width: 480px) {
+  .home-service-card {
+    flex: 0 0 88%;
+  }
+
+  .home-service-image {
+    min-height: 180px;
+    aspect-ratio: 16 / 10;
+  }
+
+  .home-service-content {
+    min-height: 140px;
+    padding: 18px 16px 22px;
+  }
+
+  .home-service-content h3 {
+    font-size: 19px;
+  }
+
+  .home-service-content p {
+    font-size: 14px;
   }
 }
 

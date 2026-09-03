@@ -1,7 +1,15 @@
 "use client";
 
-import { Search, ClipboardList, Rocket, Headphones } from "lucide-react";
-import { useTranslations, useLocale } from "next-intl";
+import {
+  Search,
+  ClipboardList,
+  Rocket,
+  Headphones,
+  ArrowRight,
+  ArrowDown,
+} from "lucide-react";
+
+import { useTranslations } from "next-intl";
 
 import "./HowWeWork.css";
 
@@ -26,7 +34,6 @@ const steps = [
 
 export default function HowWeWork() {
   const t = useTranslations("HowWeWork");
-  const locale = useLocale();
 
   return (
     <section className="how-we-work">
@@ -46,30 +53,38 @@ export default function HowWeWork() {
             const Icon = step.icon;
 
             return (
-              <div className="how-we-work-step" key={step.key}>
-                {/* Number + Icon */}
-                <div className="how-we-work-icon-wrapper">
-                  <span className="how-we-work-number">
-                    {(index + 1).toLocaleString(
-                      locale === "ar" ? "ar-SA" : "en-US",
-                      {
-                        minimumIntegerDigits: 2,
-                        useGrouping: false,
-                      },
-                    )}
-                  </span>
+              <div className="how-we-work-step-wrapper" key={step.key}>
+                {/* Step */}
+                <div className="how-we-work-step">
+                  {/* Icon */}
+                  <div className="how-we-work-icon-wrapper">
+                    <div className="how-we-work-icon">
+                      <Icon size={36} strokeWidth={1.7} />
+                    </div>
+                  </div>
 
-                  <div className="how-we-work-icon">
-                    <Icon size={36} strokeWidth={1.7} />
+                  {/* Content */}
+                  <div className="how-we-work-content">
+                    <h3>{t(`steps.${step.key}.title`)}</h3>
+
+                    <p>{t(`steps.${step.key}.description`)}</p>
                   </div>
                 </div>
 
-                {/* Content */}
-                <div className="how-we-work-content">
-                  <h3>{t(`steps.${step.key}.title`)}</h3>
+                {/* Connecting Arrow */}
+                {index < steps.length - 1 && (
+                  <>
+                    {/* Desktop + Tablet */}
+                    <div className="how-we-work-arrow how-we-work-arrow-right">
+                      <ArrowRight size={32} strokeWidth={1.7} />
+                    </div>
 
-                  <p>{t(`steps.${step.key}.description`)}</p>
-                </div>
+                    {/* Mobile */}
+                    <div className="how-we-work-arrow how-we-work-arrow-down">
+                      <ArrowDown size={28} strokeWidth={1.7} />
+                    </div>
+                  </>
+                )}
               </div>
             );
           })}

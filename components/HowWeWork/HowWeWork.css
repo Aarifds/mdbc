@@ -5,7 +5,6 @@
 .how-we-work {
   width: 100%;
   padding: 100px 0;
-
   background: var(--background);
   color: var(--text);
 }
@@ -13,7 +12,6 @@
 .how-we-work-container {
   width: 90%;
   max-width: 1400px;
-
   margin: 0 auto;
 }
 
@@ -23,45 +21,32 @@
 
 .how-we-work-heading {
   max-width: 1000px;
-
   margin: 0 auto 75px;
-
   text-align: center;
 }
 
 .how-we-work-label {
   display: inline-block;
-
   margin-bottom: 14px;
-
   color: var(--primary);
-
   font-size: 35px;
   font-weight: 700;
-
   letter-spacing: 2px;
-
   text-transform: uppercase;
 }
 
 .how-we-work-heading h2 {
   margin: 0 0 20px;
-
   color: var(--text);
-
   font-size: 42px;
   line-height: 1.2;
-
   font-weight: 700;
 }
 
 .how-we-work-heading p {
   max-width: 1000px;
-
   margin: 0 auto;
-
   color: var(--text-light);
-
   font-size: 17px;
   line-height: 1.7;
 }
@@ -71,14 +56,21 @@
 ===================================================== */
 
 .how-we-work-process {
+  width: 100%;
   display: flex;
-
   align-items: flex-start;
   justify-content: space-between;
+}
 
+/* =====================================================
+   Step Wrapper
+===================================================== */
+
+.how-we-work-step-wrapper {
   position: relative;
-
-  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 /* =====================================================
@@ -87,13 +79,10 @@
 
 .how-we-work-step {
   position: relative;
-
-  width: 25%;
-
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   text-align: center;
 }
 
@@ -103,14 +92,11 @@
 
 .how-we-work-icon-wrapper {
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 100px;
   height: 100px;
-
   margin-bottom: 28px;
 }
 
@@ -120,10 +106,8 @@
 
 .how-we-work-number {
   position: absolute;
-
   top: -8px;
   right: -8px;
-
   z-index: 3;
 
   width: 30px;
@@ -134,7 +118,6 @@
   justify-content: center;
 
   border-radius: 50%;
-
   background: var(--primary);
   color: #ffffff;
 
@@ -155,9 +138,7 @@
   justify-content: center;
 
   border-radius: 50%;
-
   background: #e6e6ff;
-
   color: var(--primary);
 
   transition:
@@ -177,37 +158,40 @@
 
 .how-we-work-content h3 {
   margin: 0 0 12px;
-
   color: var(--text);
-
   font-size: 21px;
   font-weight: 600;
 }
 
 .how-we-work-content p {
   margin: 0;
-
   color: var(--text-light);
-
   font-size: 15px;
   line-height: 1.65;
 }
 
 /* =====================================================
-   Hover
+   Connecting Arrows
 ===================================================== */
 
-.how-we-work-step:hover .how-we-work-icon {
-  transform: translateY(-7px) scale(1.06);
+.how-we-work-arrow {
+  position: absolute;
+  z-index: 2;
 
-  background: var(--primary);
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  box-shadow: 0 12px 28px rgba(0, 87, 217, 0.2);
+  color: var(--primary);
 }
 
-.how-we-work-step:hover .how-we-work-content h3 {
-  color: var(--primary);
+.how-we-work-arrow-right {
+  top: 34px;
+  right: -16px;
+}
+
+.how-we-work-arrow-down {
+  display: none;
 }
 
 /* =====================================================
@@ -216,10 +200,6 @@
 
 [data-theme="dark"] .how-we-work-icon {
   background: rgba(79, 140, 255, 0.12);
-}
-
-[data-theme="dark"] .how-we-work-step:hover .how-we-work-icon {
-  box-shadow: 0 12px 28px rgba(79, 140, 255, 0.2);
 }
 
 /* =====================================================
@@ -239,6 +219,13 @@
   left: -8px;
 }
 
+/*
+   IMPORTANT:
+   Keep ArrowRight as ArrowRight even in RTL.
+   The process should remain:
+   Understand → Plan → Implement → Support
+*/
+
 /* =====================================================
    Tablet
 ===================================================== */
@@ -256,14 +243,47 @@
     font-size: 36px;
   }
 
+  /* Keep all 4 steps in ONE horizontal row */
   .how-we-work-process {
-    flex-wrap: wrap;
-
-    gap: 50px 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
-  .how-we-work-step {
-    width: 50%;
+  .how-we-work-step-wrapper {
+    flex: 1;
+    width: 25%;
+  }
+
+  .how-we-work-content {
+    max-width: 190px;
+  }
+
+  .how-we-work-content h3 {
+    font-size: 19px;
+  }
+
+  .how-we-work-content p {
+    font-size: 14px;
+  }
+
+  .how-we-work-icon-wrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  .how-we-work-icon {
+    width: 74px;
+    height: 74px;
+  }
+
+  .how-we-work-arrow-right {
+    top: 29px;
+    right: -13px;
+  }
+
+  .how-we-work-arrow-right svg {
+    width: 26px;
+    height: 26px;
   }
 }
 
@@ -297,19 +317,55 @@
     line-height: 1.65;
   }
 
+  /* =================================================
+     Vertical Process
+  ================================================= */
+
   .how-we-work-process {
     flex-direction: column;
-
     align-items: center;
+    gap: 0;
+  }
 
-    gap: 45px;
+  .how-we-work-step-wrapper {
+    width: 100%;
+    flex: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .how-we-work-step {
     width: 100%;
   }
 
+  /* =================================================
+     Mobile Arrow
+  ================================================= */
+
+  .how-we-work-arrow-right {
+    display: none;
+  }
+
+  .how-we-work-arrow-down {
+    position: relative;
+
+    top: auto;
+    right: auto;
+
+    display: flex;
+
+    margin: 18px 0 22px;
+  }
+
+  /* =================================================
+     Icon
+  ================================================= */
+
   .how-we-work-icon-wrapper {
+    width: 82px;
+    height: 82px;
     margin-bottom: 20px;
   }
 
@@ -317,6 +373,10 @@
     width: 72px;
     height: 72px;
   }
+
+  /* =================================================
+     Content
+  ================================================= */
 
   .how-we-work-content {
     max-width: 300px;
@@ -330,10 +390,13 @@
     font-size: 14px;
   }
 
+  /* =================================================
+     Number
+  ================================================= */
+
   .how-we-work-number {
     width: 27px;
     height: 27px;
-
     font-size: 10px;
   }
 }
