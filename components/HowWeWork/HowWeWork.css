@@ -219,12 +219,9 @@
   left: -8px;
 }
 
-/*
-   IMPORTANT:
-   Keep ArrowRight as ArrowRight even in RTL.
-   The process should remain:
-   Understand → Plan → Implement → Support
-*/
+[dir="rtl"] .how-we-work-process {
+  direction: ltr;
+}
 
 /* =====================================================
    Tablet
